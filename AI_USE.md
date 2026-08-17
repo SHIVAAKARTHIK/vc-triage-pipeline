@@ -25,6 +25,8 @@ everything in this repo was read and revised by me before commit.
 | `docs/worklog.md` | Karthik | Same reason. |
 | `src/triage/schemas.py`, `evidence.py`, `util.py` | Claude Code, design co-decided | The evidence-traceability model (ADR 0002, computed `total_score`) was a joint call, drafted by Claude Code and reviewed line-by-line before commit. |
 | `tests/test_schemas.py`, `test_evidence.py`, `test_util.py`, `conftest.py` | Claude Code | Test cases target the specific guarantees schemas.py claims to make (see each test module's docstring); reviewed for whether they'd actually catch a regression, not just pass. |
+| `src/triage/cache.py`, `source.py`, `sources/yc.py`, `sources/hn.py` | Claude Code, tuned jointly against the live APIs | Founder-page parsing, the keyword filter, and the HTML body cap all came from actually running against the real YC/HN APIs during the build, not from spec alone — see docs/decisions/0003. |
+| `tests/test_cache.py`, `test_source_yc.py`, `test_source_hn.py`, `test_source_pipeline.py`, `test_source_live.py` | Claude Code | The relevance-filter test runs against a trimmed but real slice of the Winter 2025 batch, not synthetic data, specifically to catch filter false positives (it did — see ADR 0003). |
 | _(rows added per phase)_ | | |
 
 ## Where I overrode the AI

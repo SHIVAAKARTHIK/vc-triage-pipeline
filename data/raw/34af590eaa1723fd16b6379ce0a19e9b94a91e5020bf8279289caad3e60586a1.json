@@ -1,0 +1,6 @@
+{
+  "url": "https://hn.algolia.com/api/v1/search?query=tryegress.com&restrictSearchableAttributes=url&tags=story",
+  "status_code": 200,
+  "text": "{\"exhaustive\":{\"nbHits\":false,\"typo\":false},\"exhaustiveNbHits\":false,\"exhaustiveTypo\":false,\"hits\":[],\"hitsPerPage\":20,\"nbHits\":0,\"nbPages\":0,\"page\":0,\"params\":\"query=tryegress.com&restrictSearchableAttributes=url&tags=story&advancedSyntax=true&analyticsTags=backend\",\"processingTimeMS\":9,\"processingTimingsMS\":{\"_request\":{\"queue\":24,\"roundTrip\":17},\"fetch\":{\"query\":8,\"total\":9},\"total\":9},\"query\":\"tryegress.com\",\"serverTimeMS\":34}\n",
+  "fetched_at": "2026-08-17T09:54:17.799699+00:00"
+}

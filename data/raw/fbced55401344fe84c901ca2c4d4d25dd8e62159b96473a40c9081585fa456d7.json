@@ -1,0 +1,6 @@
+{
+  "url": "https://hn.algolia.com/api/v1/search?query=quantstruct.com&restrictSearchableAttributes=url&tags=story",
+  "status_code": 200,
+  "text": "{\"exhaustive\":{\"nbHits\":false,\"typo\":false},\"exhaustiveNbHits\":false,\"exhaustiveTypo\":false,\"hits\":[],\"hitsPerPage\":20,\"nbHits\":0,\"nbPages\":0,\"page\":0,\"params\":\"query=quantstruct.com&restrictSearchableAttributes=url&tags=story&advancedSyntax=true&analyticsTags=backend\",\"processingTimeMS\":12,\"processingTimingsMS\":{\"_request\":{\"roundTrip\":25},\"fetch\":{\"query\":10,\"total\":11},\"total\":12},\"query\":\"quantstruct.com\",\"serverTimeMS\":12}\n",
+  "fetched_at": "2026-08-17T09:54:51.898470+00:00"
+}

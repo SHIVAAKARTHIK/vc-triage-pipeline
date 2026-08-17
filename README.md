@@ -3,17 +3,20 @@
 An AI-augmented deal triage pipeline for a seed-stage fund. Point it at a topic, get
 investment memos out the other end.
 
-> **Status: in development.** Phase 0 (scaffold) complete. See `docs/worklog.md` for the
-> running account of how this is being built.
+> **Status: in development.** Sourcing (this stage below) is live; analyse and memo land
+> next. See `docs/worklog.md` for the running account of how this is being built.
 
 ## Quickstart
 
 ```bash
 uv sync
-uv run triage version
+uv run triage source --batch "Winter 2025" --limit 15
 ```
 
-Full pipeline usage lands in Phase 2. The intended shape:
+Ranks a YC batch by thesis relevance (see `docs/decisions/0003`) and writes
+`data/candidates.json`, each candidate backed by evidenced founder/traction/product
+facts. Re-running it replays entirely from the committed `data/raw/` cache — no network,
+no API key needed. `analyse` and `memo` land next; the intended shape once they do:
 
 ```bash
 uv run triage run --topic "AI agents for back-office ops"

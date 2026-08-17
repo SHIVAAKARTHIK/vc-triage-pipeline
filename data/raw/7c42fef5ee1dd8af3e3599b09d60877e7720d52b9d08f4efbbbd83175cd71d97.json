@@ -1,0 +1,6 @@
+{
+  "url": "https://hn.algolia.com/api/v1/search?query=leapingai.com&restrictSearchableAttributes=url&tags=story",
+  "status_code": 200,
+  "text": "{\"exhaustive\":{\"nbHits\":false,\"typo\":false},\"exhaustiveNbHits\":false,\"exhaustiveTypo\":false,\"hits\":[],\"hitsPerPage\":20,\"nbHits\":0,\"nbPages\":0,\"page\":0,\"params\":\"query=leapingai.com&restrictSearchableAttributes=url&tags=story&advancedSyntax=true&analyticsTags=backend\",\"processingTimeMS\":66,\"processingTimingsMS\":{\"_request\":{\"queue\":40,\"roundTrip\":20},\"fetch\":{\"query\":17,\"scanning\":48,\"total\":66},\"total\":66},\"query\":\"leapingai.com\",\"serverTimeMS\":107}\n",
+  "fetched_at": "2026-08-17T09:54:26.762869+00:00"
+}

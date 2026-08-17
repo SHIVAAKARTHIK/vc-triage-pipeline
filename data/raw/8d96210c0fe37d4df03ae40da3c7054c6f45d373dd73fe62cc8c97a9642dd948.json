@@ -1,0 +1,6 @@
+{
+  "url": "https://hn.algolia.com/api/v1/search?query=cifrato.ai&restrictSearchableAttributes=url&tags=story",
+  "status_code": 200,
+  "text": "{\"exhaustive\":{\"nbHits\":false,\"typo\":false},\"exhaustiveNbHits\":false,\"exhaustiveTypo\":false,\"hits\":[],\"hitsPerPage\":20,\"nbHits\":0,\"nbPages\":0,\"page\":0,\"params\":\"query=cifrato.ai&restrictSearchableAttributes=url&tags=story&advancedSyntax=true&analyticsTags=backend\",\"processingTimeMS\":7,\"processingTimingsMS\":{\"_request\":{\"roundTrip\":14},\"fetch\":{\"query\":5,\"total\":6},\"total\":7},\"query\":\"cifrato.ai\",\"serverTimeMS\":8}\n",
+  "fetched_at": "2026-08-17T09:54:35.967695+00:00"
+}

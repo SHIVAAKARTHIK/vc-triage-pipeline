@@ -1,0 +1,505 @@
+[
+  {
+    "id": 28922,
+    "name": "Egress Health",
+    "slug": "egress-health",
+    "former_names": [
+      "Egress"
+    ],
+    "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/392ff7d64717e95c1b8ca23af91934ffec643fbf.png",
+    "website": "https://tryegress.com",
+    "all_locations": "San Francisco, CA, USA",
+    "long_description": "Egress Health builds AI agents to automate revenue cycle management, starting with dental offices. Our workflows span eligibility checks, claims scrubbing, payment posting, and denial management. On average, our customers eliminate 1-2 full time employees and collect 5-15% more revenue each month. Interested in learning more? Shoot us a note at founders@tryegress.com",
+    "one_liner": "Automated revenue cycle management, starting with dentists",
+    "team_size": 2,
+    "industry": "Healthcare",
+    "subindustry": "Healthcare",
+    "launched_at": 1690905553,
+    "tags": [],
+    "tags_highlighted": [],
+    "top_company": false,
+    "isHiring": false,
+    "nonprofit": false,
+    "batch": "Winter 2025",
+    "status": "Acquired",
+    "industries": [
+      "Healthcare"
+    ],
+    "regions": [
+      "United States of America",
+      "America / Canada"
+    ],
+    "stage": "Early",
+    "app_video_public": false,
+    "demo_day_video_public": false,
+    "app_answers": null,
+    "question_answers": false,
+    "url": "https://www.ycombinator.com/companies/egress-health",
+    "api": "https://yc-oss.github.io/api/batches/winter-2025/egress-health.json"
+  },
+  {
+    "id": 30179,
+    "name": "Vetnio",
+    "slug": "vetnio",
+    "former_names": [],
+    "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/a5005981ef0d73a35ad3b8810eead978401e6e5e.png",
+    "website": "https://vetnio.com/",
+    "all_locations": "Stockholm, Stockholm County, Sweden",
+    "long_description": "Veterinarians spend 40% of their time on admin work, >20% on note taking alone. We're here to change that so they can focus on what really matters - providing the best care possible for animals.",
+    "one_liner": "AI Copilot that automates admin work for veterinary professionals",
+    "team_size": 6,
+    "industry": "B2B",
+    "subindustry": "B2B -> Productivity",
+    "launched_at": 1738187804,
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "B2B",
+      "AI"
+    ],
+    "tags_highlighted": [],
+    "top_company": false,
+    "isHiring": false,
+    "nonprofit": false,
+    "batch": "Winter 2025",
+    "status": "Active",
+    "industries": [
+      "B2B",
+      "Productivity"
+    ],
+    "regions": [
+      "Sweden",
+      "Europe"
+    ],
+    "stage": "Early",
+    "app_video_public": false,
+    "demo_day_video_public": false,
+    "app_answers": null,
+    "question_answers": false,
+    "url": "https://www.ycombinator.com/companies/vetnio",
+    "api": "https://yc-oss.github.io/api/batches/winter-2025/vetnio.json"
+  },
+  {
+    "id": 30218,
+    "name": "Toothy AI",
+    "slug": "toothy-ai",
+    "former_names": [
+      "Toothy"
+    ],
+    "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/1fe65dd62e91bce60fafd27b8e4bea680f8db7d3.png",
+    "website": "https://www.toothy.ai/",
+    "all_locations": "San Francisco, CA, USA",
+    "long_description": "We’re Toothy.ai.  We’re building AI agents for dental practices that handle everything related to patient insurance. The average dental clinic spends over 160 hours a month on insurance tasks like verifying patient policies, billing, and claims processing. Our AI agents automate this entire workflow—including making insurance calls with voice AI—saving clinics time, reducing costs, and ensuring faster reimbursements.",
+    "one_liner": "AI for insurance verification & billing at dental clinics",
+    "team_size": 15,
+    "industry": "Healthcare",
+    "subindustry": "Healthcare -> Healthcare IT",
+    "launched_at": 1736273040,
+    "tags": [
+      "Artificial Intelligence",
+      "Health Tech",
+      "Healthcare",
+      "Dental",
+      "Conversational AI"
+    ],
+    "tags_highlighted": [],
+    "top_company": false,
+    "isHiring": true,
+    "nonprofit": false,
+    "batch": "Winter 2025",
+    "status": "Active",
+    "industries": [
+      "Healthcare",
+      "Healthcare IT"
+    ],
+    "regions": [
+      "United States of America",
+      "America / Canada",
+      "Remote",
+      "Partly Remote"
+    ],
+    "stage": "Early",
+    "app_video_public": false,
+    "demo_day_video_public": false,
+    "app_answers": null,
+    "question_answers": false,
+    "url": "https://www.ycombinator.com/companies/toothy-ai",
+    "api": "https://yc-oss.github.io/api/batches/winter-2025/toothy-ai.json"
+  },
+  {
+    "id": 30239,
+    "name": "Cardamon",
+    "slug": "cardamon",
+    "former_names": [
+      "Openwealth"
+    ],
+    "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/a3e4d26d964f7e9e8a081b6c3ec2ddad6bb65119.png",
+    "website": "https://cardamon.ai/",
+    "all_locations": "London, England, United Kingdom",
+    "long_description": "Cardamon is an AI powered platform that ingests relevant regulation, understands what applies to each regulated financial firm, and gets compliance officers from regulation, to obligations, to product requirements in minutes - not weeks.\r\n\r\nFinancial firms face a host of complex regulations that make it incredibly painful to launch and maintain products in a compliant way. As a Product team at Revolut, we felt this pain deeply ourselves - we had products ready to launch but stuck in compliance limbo, often for weeks. Turns out, getting compliant took as long as building the product itself. \r\n\r\nFrustrated, we dug in and were shocked by how manual and inefficient the processes were. That’s when it clicked: there’s a huge opportunity to automate the boring stuff (and solve our own problem!). Compliance teams win because they ditch the tedious tasks. Product teams win because they ship faster. Everyone’s happy.",
+    "one_liner": "AI compliance co-pilot for regulated financial businesses",
+    "team_size": 2,
+    "industry": "B2B",
+    "subindustry": "B2B -> Finance and Accounting",
+    "launched_at": 1740009565,
+    "tags": [
+      "Artificial Intelligence",
+      "Fintech",
+      "Compliance",
+      "Regtech"
+    ],
+    "tags_highlighted": [],
+    "top_company": false,
+    "isHiring": false,
+    "nonprofit": false,
+    "batch": "Winter 2025",
+    "status": "Active",
+    "industries": [
+      "B2B",
+      "Finance and Accounting"
+    ],
+    "regions": [
+      "United Kingdom",
+      "Europe"
+    ],
+    "stage": "Early",
+    "app_video_public": false,
+    "demo_day_video_public": false,
+    "app_answers": null,
+    "question_answers": false,
+    "url": "https://www.ycombinator.com/companies/cardamon",
+    "api": "https://yc-oss.github.io/api/batches/winter-2025/cardamon.json"
+  },
+  {
+    "id": 30243,
+    "name": "Cifrato",
+    "slug": "cifrato",
+    "former_names": [],
+    "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/0bb4c15c8e630dcffec655f29ad07b101afe03c5.png",
+    "website": "https://cifrato.ai",
+    "all_locations": "Bogotá, Bogota, Colombia; Remote",
+    "long_description": "End-to-end accounting workflows executed by AI agents.\r\n- Invoice capture + upload to ERP/POS\r\n- Invoice payment + reconciliation\r\n- Tax filings\r\n- CFO insights on demand",
+    "one_liner": "AI Accountant for Accounting Firms",
+    "team_size": 17,
+    "industry": "B2B",
+    "subindustry": "B2B -> Operations",
+    "launched_at": 1751513280,
+    "tags": [
+      "FinOps",
+      "SaaS",
+      "AI"
+    ],
+    "tags_highlighted": [],
+    "top_company": false,
+    "isHiring": true,
+    "nonprofit": false,
+    "batch": "Winter 2025",
+    "status": "Active",
+    "industries": [
+      "B2B",
+      "Operations"
+    ],
+    "regions": [
+      "Colombia",
+      "Latin America",
+      "Remote",
+      "Fully Remote"
+    ],
+    "stage": "Early",
+    "app_video_public": false,
+    "demo_day_video_public": false,
+    "app_answers": null,
+    "question_answers": false,
+    "url": "https://www.ycombinator.com/companies/cifrato",
+    "api": "https://yc-oss.github.io/api/batches/winter-2025/cifrato.json"
+  },
+  {
+    "id": 30232,
+    "name": "careCycle",
+    "slug": "carecycle",
+    "former_names": [
+      "Nodable Labs"
+    ],
+    "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/8d55690f14f3865aa94fd0c4bd6493abb750af90.png",
+    "website": "https://www.careCycle.ai",
+    "all_locations": "San Francisco, CA, USA",
+    "long_description": "careCycle is an AI workforce for medicare agencies and FMOs - helping leading agencies achieve 5x higher conversions, 37% better retention, and saving thousands of agent hours.\r\n\r\nWe're transforming how Medicare agencies handle member relationships with teams of voice AI agents. We're solving the industry's biggest challenge: 50% annual member churn caused by poor post-enrollment engagement.\r\n\r\nOur multi-agent AI teams work together to handle the entire customer journey - from initial contact through enrollment and ongoing care. When a lead comes in after hours, one AI agent answers and schedules a callback, another calls at the perfect time, a third captures qualifying information, and a fourth handles the warm transfer to a licensed agent. This approach helped a leading FMO write over $2M in renewals during AEP 2024 while reducing agent talk time by 20% per sale.\r\n\r\nWe've pioneered a purpose-built solution for Medicare's unique compliance requirements. Unlike generic AI platforms, our system features built-in HIPAA/CMS compliance, real-time data structuring, and seamless CRM integration. This enables agencies of all sizes to deliver enterprise-grade member care without massive infrastructure investments.\r\n\r\nEarly metrics show the power of our approach:\r\n\r\n- 5x increase in after-hours conversion rates\r\n- 37% improvement in 90-day retention\r\n- 3,000+ agent hours saved in a single AEP\r\n- $2M+ in additional renewals during AEP 2024\r\n\r\nThe Medicare Advantage market represents a massive opportunity, with over $360B in annual premiums and growing 10% year over year. By solving the member retention challenge, we're positioning ourselves to capture significant value by transforming the member care experience for beneficiaries.",
+    "one_liner": "Voice AI teams for medicare agencies.",
+    "team_size": 5,
+    "industry": "B2B",
+    "subindustry": "B2B",
+    "launched_at": 1740261060,
+    "tags": [
+      "Health Insurance",
+      "Telecommunications",
+      "Conversational AI"
+    ],
+    "tags_highlighted": [],
+    "top_company": false,
+    "isHiring": false,
+    "nonprofit": false,
+    "batch": "Winter 2025",
+    "status": "Active",
+    "industries": [
+      "B2B"
+    ],
+    "regions": [
+      "United States of America",
+      "America / Canada"
+    ],
+    "stage": "Early",
+    "app_video_public": false,
+    "demo_day_video_public": false,
+    "app_answers": null,
+    "question_answers": false,
+    "url": "https://www.ycombinator.com/companies/carecycle",
+    "api": "https://yc-oss.github.io/api/batches/winter-2025/carecycle.json"
+  },
+  {
+    "id": 29986,
+    "name": "Exin Therapeutics",
+    "slug": "exin-therapeutics",
+    "former_names": [
+      "EI Therapeutics"
+    ],
+    "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/61d9c34b51f9b98cbfdb92bc0014e3569c29b36c.png",
+    "website": "https://www.exintherapeutics.com/",
+    "all_locations": "San Francisco, CA, USA",
+    "long_description": "We use AI and high-throughput mouse studies to discover therapeutics that modify neural activity in the brain. The initial focus is on epilepsies associated with autism and Parkinson’s disease with the potential to expand to any neurological disorder underlined by a dysfunction in neural activity. Our R&D is guided by AI models trained on high-density multimodal mouse data generated in-house.\r\n\r\nWe are 3 Oxford-trained neuroscientists supported by an experienced SAB from Harvard, Science Corp (ex-Neuralink), EPFL, Meta, and UCL.\r\n\r\nIn 1.5 months since landing in SF, we went from nothing to (1) opening and operating an animal lab in South SF, (2) obtaining a proof-of-concept in mice, (3) building a multimodal AI model that directs our screening approach and (4) submitting two provisional patents; all while utilizing less than 50% of our YC funding. \r\n",
+    "one_liner": "AI drug discovery platform for neurotherapeutics",
+    "team_size": 9,
+    "industry": "Healthcare",
+    "subindustry": "Healthcare -> Therapeutics",
+    "launched_at": 1736839155,
+    "tags": [
+      "Neurotechnology",
+      "Biotech",
+      "Therapeutics"
+    ],
+    "tags_highlighted": [],
+    "top_company": false,
+    "isHiring": false,
+    "nonprofit": false,
+    "batch": "Winter 2025",
+    "status": "Active",
+    "industries": [
+      "Healthcare",
+      "Therapeutics"
+    ],
+    "regions": [
+      "United States of America",
+      "America / Canada"
+    ],
+    "stage": "Early",
+    "app_video_public": false,
+    "demo_day_video_public": false,
+    "app_answers": null,
+    "question_answers": false,
+    "url": "https://www.ycombinator.com/companies/exin-therapeutics",
+    "api": "https://yc-oss.github.io/api/batches/winter-2025/exin-therapeutics.json"
+  },
+  {
+    "id": 30172,
+    "name": "Enhanced Radar",
+    "slug": "enhanced-radar",
+    "former_names": [],
+    "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/97af6428ccfdfbaa94b52ffdadc13d8b1f2609b3.png",
+    "website": "https://www.enhancedradar.com/",
+    "all_locations": "San Francisco, CA, USA",
+    "long_description": "Enhanced Radar is building better, safer air traffic control systems.",
+    "one_liner": "AI for air traffic control",
+    "team_size": 2,
+    "industry": "Industrials",
+    "subindustry": "Industrials -> Aviation and Space",
+    "launched_at": 1740622657,
+    "tags": [],
+    "tags_highlighted": [],
+    "top_company": false,
+    "isHiring": true,
+    "nonprofit": false,
+    "batch": "Winter 2025",
+    "status": "Active",
+    "industries": [
+      "Industrials",
+      "Aviation and Space"
+    ],
+    "regions": [
+      "United States of America",
+      "America / Canada"
+    ],
+    "stage": "Early",
+    "app_video_public": false,
+    "demo_day_video_public": false,
+    "app_answers": null,
+    "question_answers": false,
+    "url": "https://www.ycombinator.com/companies/enhanced-radar",
+    "api": "https://yc-oss.github.io/api/batches/winter-2025/enhanced-radar.json"
+  },
+  {
+    "id": 30368,
+    "name": "Red Barn Robotics",
+    "slug": "red-barn-robotics",
+    "former_names": [],
+    "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/f9fea0321812586f595ebfa63ebe19d45c322ad2.png",
+    "website": "https://www.redbarnrobotics.com",
+    "all_locations": "Seattle, WA, USA",
+    "long_description": "We are building an autonomous robot to precisely eliminate weeds and leave crops untouched. Despite $100 billion being spent annually on weed control, weeds still cost the US economy $46B/year. Weeds steal sunlight and nutrients from crops, forcing farmers to choose between higher costs and lower yields. Moreover, many farms still rely on hand labor to control weed growth. The process is slow, expensive, and increasingly difficult due to constant labor shortages (1 out of every 5 US farm positions go unfilled each year). Our robot nicknamed the Field Hand is able to automate one of the worst jobs on a farm and will help healthily feed the world. ",
+    "one_liner": "A Roomba for weeds on a farm. ",
+    "team_size": 5,
+    "industry": "Industrials",
+    "subindustry": "Industrials -> Agriculture",
+    "launched_at": 1739827651,
+    "tags": [],
+    "tags_highlighted": [],
+    "top_company": false,
+    "isHiring": false,
+    "nonprofit": false,
+    "batch": "Winter 2025",
+    "status": "Active",
+    "industries": [
+      "Industrials",
+      "Agriculture"
+    ],
+    "regions": [
+      "United States of America",
+      "America / Canada"
+    ],
+    "stage": "Early",
+    "app_video_public": false,
+    "demo_day_video_public": false,
+    "app_answers": null,
+    "question_answers": false,
+    "url": "https://www.ycombinator.com/companies/red-barn-robotics",
+    "api": "https://yc-oss.github.io/api/batches/winter-2025/red-barn-robotics.json"
+  },
+  {
+    "id": 30299,
+    "name": "Miyagi Labs",
+    "slug": "miyagi-labs",
+    "former_names": [],
+    "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/e5465f36b202134eec8628c9e4cf35661e125dbd.png",
+    "website": "https://miyagilabs.ai",
+    "all_locations": "New York City, NY, USA",
+    "long_description": "Miyagi Labs is an AI-powered exam preparation platform built to unlock human intelligence and democratize world-class education globally. We provide students with an elite AI tutor, hyper-personalized study analytics, and an infinite engine of rigorous practice material tailored to exam material.\r\n\r\nWe currently support major standardized exams across North America, Africa, and Asia, including the SAT, ACT, and NYC SHSAT (US), the UTME (Nigeria), the KCSE, KJSEA and KPSEA (Kenya), and the NEET and CAT (India).\r\n\r\nWe’re building the platform we wish we had when studying for exams. We envision a world where students anywhere can come to Miyagi to receive personalized, world-class AI tutoring designed to unlock their full potential.",
+    "one_liner": "AI tutors for exam prep",
+    "team_size": 2,
+    "industry": "Education",
+    "subindustry": "Education",
+    "launched_at": 1739904496,
+    "tags": [
+      "AI-Enhanced Learning",
+      "Education",
+      "eLearning",
+      "Edtech"
+    ],
+    "tags_highlighted": [],
+    "top_company": false,
+    "isHiring": false,
+    "nonprofit": false,
+    "batch": "Winter 2025",
+    "status": "Active",
+    "industries": [
+      "Education"
+    ],
+    "regions": [
+      "United States of America",
+      "America / Canada"
+    ],
+    "stage": "Early",
+    "app_video_public": false,
+    "demo_day_video_public": false,
+    "app_answers": null,
+    "question_answers": false,
+    "url": "https://www.ycombinator.com/companies/miyagi-labs",
+    "api": "https://yc-oss.github.io/api/batches/winter-2025/miyagi-labs.json"
+  },
+  {
+    "id": 30304,
+    "name": "Mastra",
+    "slug": "mastra",
+    "former_names": [],
+    "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/a6e5f319cbd11b23e8938be90ed120209a914c0a.png",
+    "website": "https://mastra.ai",
+    "all_locations": "San Francisco, CA, USA; Remote",
+    "long_description": "Mastra is the easiest way to build a production AI application, built by the team that brought you Gatsby. We provide a complete set of AI primitives: workflows for complex operations, agents for autonomous decisions, RAG for knowledge integration, and evals for quality & accuracy. Mastra is open-source, modular, and built in Typescript for product developers. You can deploy Mastra on any cloud, and it gives you a straightforward syntax to solve the hardest problems building with AI: human-in-the-loop workflows, agent memory and tool selection, and output quality. ",
+    "one_liner": "The Javascript framework for building AI agents, from the Gatsby devs",
+    "team_size": 30,
+    "industry": "B2B",
+    "subindustry": "B2B -> Engineering, Product and Design",
+    "launched_at": 1737136768,
+    "tags": [
+      "Artificial Intelligence",
+      "Developer Tools",
+      "Open Source",
+      "AI"
+    ],
+    "tags_highlighted": [],
+    "top_company": false,
+    "isHiring": false,
+    "nonprofit": false,
+    "batch": "Winter 2025",
+    "status": "Active",
+    "industries": [
+      "B2B",
+      "Engineering, Product and Design"
+    ],
+    "regions": [
+      "United States of America",
+      "America / Canada",
+      "Remote",
+      "Fully Remote"
+    ],
+    "stage": "Early",
+    "app_video_public": false,
+    "demo_day_video_public": false,
+    "app_answers": null,
+    "question_answers": false,
+    "url": "https://www.ycombinator.com/companies/mastra",
+    "api": "https://yc-oss.github.io/api/batches/winter-2025/mastra.json"
+  },
+  {
+    "id": 30213,
+    "name": "Truffle AI",
+    "slug": "truffle-ai",
+    "former_names": [],
+    "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/17f1a1e21672fa03c69b669feef31d2a59b2c849.png",
+    "website": "https://www.trytruffle.ai/",
+    "all_locations": "Bengaluru, KA, India",
+    "long_description": "Truffle AI makes it easy for developers to integrate AI agents into any software application. We do this by exposing agents as simple APIs that can be called from anywhere. Developers have used Truffle to add customer support agents into WhatsApp and analytics agents into Slack.",
+    "one_liner": "AWS for AI Agents",
+    "team_size": 2,
+    "industry": "B2B",
+    "subindustry": "B2B -> Engineering, Product and Design",
+    "launched_at": 1740509470,
+    "tags": [
+      "Artificial Intelligence",
+      "Developer Tools",
+      "Generative AI",
+      "Infrastructure",
+      "AI Assistant"
+    ],
+    "tags_highlighted": [],
+    "top_company": false,
+    "isHiring": false,
+    "nonprofit": false,
+    "batch": "Winter 2025",
+    "status": "Active",
+    "industries": [
+      "B2B",
+      "Engineering, Product and Design"
+    ],
+    "regions": [
+      "India",
+      "South Asia",
+      "Remote",
+      "Partly Remote"
+    ],
+    "stage": "Early",
+    "app_video_public": false,
+    "demo_day_video_public": false,
+    "app_answers": null,
+    "question_answers": false,
+    "url": "https://www.ycombinator.com/companies/truffle-ai",
+    "api": "https://yc-oss.github.io/api/batches/winter-2025/truffle-ai.json"
+  }
+]

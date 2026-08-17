@@ -31,7 +31,7 @@ dev = [
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-q --strict-markers"
+addopts = "-q --strict-markers -m \"not live\""
 markers = [
     # Tests that hit the network or a real LLM. Excluded from the default run:
     #   uv run pytest -m live
@@ -44,3 +44,9 @@ src = ["src", "tests"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.ruff.lint.flake8-bugbear]
+# Typer's `= typer.Option(...)` / `typer.Argument(...)` default-arg idiom is by
+# design, not the flake8-bugbear B008 footgun (a mutable default built once at
+# import time and reused) it's meant to catch.
+extend-immutable-calls = ["typer.Option", "typer.Argument"]

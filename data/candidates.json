@@ -1,0 +1,504 @@
+[
+  {
+    "slug": "egress-health",
+    "name": "Egress Health",
+    "website": "https://tryegress.com/",
+    "one_liner": "Automated revenue cycle management, starting with dentists",
+    "founders": [
+      "Alex Pedersen — Co-founder of Egress. Prev Microsoft, Harvard CS"
+    ],
+    "source_batch": "Winter 2025",
+    "traction": {
+      "kind": "yc_batch",
+      "detail": "Winter 2025 admission",
+      "url": "https://www.ycombinator.com/companies/egress-health"
+    },
+    "evidence": [
+      {
+        "id": "ev_5ae73f9c",
+        "url": "https://www.ycombinator.com/companies/egress-health",
+        "source": "yc",
+        "retrieved_at": "2026-08-17T09:54:16.311221Z",
+        "snippet": "Egress Health builds AI agents to automate revenue cycle management, starting with dental offices. Our workflows span eligibility checks, claims scrubbing, payment posting, and denial management. On average, our customers eliminate 1-2 full time employees and collect 5-15% more revenue each month. Interested in learning more? Shoot us a note at founders@tryegress.com"
+      }
+    ],
+    "sourced_at": "2026-08-17T09:54:16.311221Z"
+  },
+  {
+    "slug": "leaping-ai",
+    "name": "Leaping AI",
+    "website": "https://www.leapingai.com/",
+    "one_liner": "AI voice and texting agents",
+    "founders": [
+      "Kevin Wu — Founder at Leaping AI, which offers AI voice and texting agents for home remodeling, roofing, etc. Formerly was an Associate at BCG for 3 years. Studied Computer Science at TU Munich and at CDTM.",
+      "Arkadiy Telegin — Co-founder at Leaping AI (W25). We are building the only platform for self-improving voice AI agents. Previously worked in autonomous robotics (self-driving cars, space-tech, and consumer applications). Led Germany's largest space-tech student organization's software division."
+    ],
+    "source_batch": "Winter 2025",
+    "traction": {
+      "kind": "yc_batch",
+      "detail": "Winter 2025 admission",
+      "url": "https://www.ycombinator.com/companies/leaping-ai"
+    },
+    "evidence": [
+      {
+        "id": "ev_ded881b4",
+        "url": "https://www.ycombinator.com/companies/leaping-ai",
+        "source": "yc",
+        "retrieved_at": "2026-08-17T09:54:24.199094Z",
+        "snippet": "Leaping AI is the best platform to deploy voice and texting AI agents for customer service, lead qualification and appointment scheduling. We target mid-market and Enterprise companies and industries are: home remodeling, roofing, pay per call, travel, retail, health insurance, Medicare, health and real estate.\r\n\r\nWe automated contact centers employing >100 human agents and now handle their incoming customer support and appointment scheduling calls, end-to-end. All while maintaining 90% customer"
+      },
+      {
+        "id": "ev_c26af8bd",
+        "url": "https://www.leapingai.com/",
+        "source": "homepage",
+        "retrieved_at": "2026-08-17T09:54:24.199094Z",
+        "snippet": "Deploy enterprise-grade AI voice agents with Leaping AI to automate customer service and appointment booking calls. Trusted by leading companies such as Eurowings and Thompson Creek Window Company."
+      }
+    ],
+    "sourced_at": "2026-08-17T09:54:24.199094Z"
+  },
+  {
+    "slug": "scout",
+    "name": "Scout",
+    "website": "https://scoutforschools.com/",
+    "one_liner": "AI-powered student information system for K-12 schools",
+    "founders": [
+      "Noah Fichter — Building the next generation of digital infrastructure for America's schools",
+      "Max Bertfield — Building software for educators"
+    ],
+    "source_batch": "Winter 2025",
+    "traction": {
+      "kind": "yc_batch",
+      "detail": "Winter 2025 admission",
+      "url": "https://www.ycombinator.com/companies/scout-4"
+    },
+    "evidence": [
+      {
+        "id": "ev_46fbfc43",
+        "url": "https://www.ycombinator.com/companies/scout-4",
+        "source": "yc",
+        "retrieved_at": "2026-08-17T09:54:27.364629Z",
+        "snippet": "The student information system (SIS) is the core system of record in every K-12 school. It tracks students, attendance, grades, schedules, staff, and more - kind of like the ERP for schools.\r\n\r\nLegacy SIS providers do just about that, and not much more. School districts layer dozens of tools on top of their SIS to fill in the gaps.\r\n\r\nScout is an AI-powered student information system that automates school- and district-wide busywork, from day-to-day operations like attendance tracking to annual "
+      },
+      {
+        "id": "ev_6cbf7fa5",
+        "url": "https://scoutforschools.com/",
+        "source": "homepage",
+        "retrieved_at": "2026-08-17T09:54:27.364629Z",
+        "snippet": "Scout is the AI-native student information system for innovative schools — enrollment, compliance, reporting, and student success in one system schools actually love."
+      }
+    ],
+    "sourced_at": "2026-08-17T09:54:27.364629Z"
+  },
+  {
+    "slug": "toothy-ai",
+    "name": "Toothy AI",
+    "website": "https://www.toothy.ai/",
+    "one_liner": "AI for insurance verification & billing at dental clinics",
+    "founders": [
+      "Johnny Chen — 2nd time founder now automating back office functions for dental clinics. Built one of the first AI B2B cold email solutions (backed by SoftBank) to $1m in ARR using GPT-J. Background in full stack engineering, operations management, and B2B marketing. Previously worked at Ford Motor’s R&D lab as a software engineer.",
+      "Matt Kerrigan — 2nd time technical founder at Toothy AI, where I'm working on automating back office operations for dental clinics. First journey ended in Salezilla, a LLM-based cold email campaign tool that launched before ChatGPT, it is still operating today. Before that I was in a ML role at a startup that was acquired by Nordstrom.",
+      "Tejas Konduru — Helping build the largest healthcare AI company!"
+    ],
+    "source_batch": "Winter 2025",
+    "traction": {
+      "kind": "yc_batch",
+      "detail": "Winter 2025 admission",
+      "url": "https://www.ycombinator.com/companies/toothy-ai"
+    },
+    "evidence": [
+      {
+        "id": "ev_18b717e6",
+        "url": "https://www.ycombinator.com/companies/toothy-ai",
+        "source": "yc",
+        "retrieved_at": "2026-08-17T09:54:29.931773Z",
+        "snippet": "We’re Toothy.ai.  We’re building AI agents for dental practices that handle everything related to patient insurance. The average dental clinic spends over 160 hours a month on insurance tasks like verifying patient policies, billing, and claims processing. Our AI agents automate this entire workflow—including making insurance calls with voice AI—saving clinics time, reducing costs, and ensuring faster reimbursements."
+      },
+      {
+        "id": "ev_a3e05c0f",
+        "url": "https://www.toothy.ai/",
+        "source": "homepage",
+        "retrieved_at": "2026-08-17T09:54:29.931773Z",
+        "snippet": "Toothy takes insurance off your team"
+      }
+    ],
+    "sourced_at": "2026-08-17T09:54:29.931773Z"
+  },
+  {
+    "slug": "cifrato",
+    "name": "Cifrato",
+    "website": "https://cifrato.ai/",
+    "one_liner": "AI Accountant for Accounting Firms",
+    "founders": [
+      "Juan Pisco — Building the AI Accounting Agent for Accounting Firms. Exit tripplanner.ai (3M+ users). Technical."
+    ],
+    "source_batch": "Winter 2025",
+    "traction": {
+      "kind": "yc_batch",
+      "detail": "Winter 2025 admission",
+      "url": "https://www.ycombinator.com/companies/cifrato"
+    },
+    "evidence": [
+      {
+        "id": "ev_5b44c5fe",
+        "url": "https://www.ycombinator.com/companies/cifrato",
+        "source": "yc",
+        "retrieved_at": "2026-08-17T09:54:34.948621Z",
+        "snippet": "End-to-end accounting workflows executed by AI agents.\r\n- Invoice capture + upload to ERP/POS\r\n- Invoice payment + reconciliation\r\n- Tax filings\r\n- CFO insights on demand"
+      },
+      {
+        "id": "ev_5b146505",
+        "url": "https://cifrato.ai/",
+        "source": "homepage",
+        "retrieved_at": "2026-08-17T09:54:34.948621Z",
+        "snippet": "Agents that process invoices, reconcile, and keep you compliant. Designed to run the finance function of every company, everywhere."
+      }
+    ],
+    "sourced_at": "2026-08-17T09:54:34.948621Z"
+  },
+  {
+    "slug": "dex",
+    "name": "Dex",
+    "website": "https://joindex.com/",
+    "one_liner": "The AI Coworker in Chrome",
+    "founders": [
+      "Regina Lin — Regina is the co-founder & CEO of Dex. She studied Mathematics with a concurrent master's in Computational Science at Harvard (dropped out). She previously co-founded Contour AI, a devOps tool for LLM evaluation, helped build the MVP an ecommerce marketplace with 40K+ customers and worked in various tech investment roles.",
+      "Kevin Gu — Co-founder of Dex. Prev Math & Stat at Harvard, quant/ML researcher at Jump Trading, IBM Research, QuantCo, Meta."
+    ],
+    "source_batch": "Winter 2025",
+    "traction": {
+      "kind": "yc_batch",
+      "detail": "Winter 2025 admission",
+      "url": "https://www.ycombinator.com/companies/joindex"
+    },
+    "evidence": [
+      {
+        "id": "ev_2a8efe8a",
+        "url": "https://www.ycombinator.com/companies/joindex",
+        "source": "yc",
+        "retrieved_at": "2026-08-17T09:54:37.970720Z",
+        "snippet": "ThirdLayer is an applied research and product lab building the next interface for human–AI collaboration.\r\n\r\nOur first product is Dex, an AI copilot for the browser. Think Cursor for knowledge work, optimized for speed and embedded directly where you work.\r\n\r\nMost web agents are built for set-and-forget tasks. But real work is fluid and messy—spread across tabs, tools, and evolving decisions. Dex transforms your browser into an intelligent, multimodal workspace that understands your intent throu"
+      },
+      {
+        "id": "ev_c4975c0c",
+        "url": "https://joindex.com/",
+        "source": "homepage",
+        "retrieved_at": "2026-08-17T09:54:37.970720Z",
+        "snippet": "Dex is AI with full operational memory across your entire workspace. Every datapoint is ingested, synced, and structured into compounding context for high-leverage work."
+      }
+    ],
+    "sourced_at": "2026-08-17T09:54:37.970720Z"
+  },
+  {
+    "slug": "rally",
+    "name": "Rally",
+    "website": "https://www.getrally.com/",
+    "one_liner": "Financial OS for Modern Fleets",
+    "founders": [
+      "Nick Telecki — CEO Rally. 2x Founder. Previously built a delivery startup, scaling it to $3M ARR in 1 year. Managed global strategy at Delivery Hero across 50+ markets. Bring a decade of experience across finance, tech and logistics.",
+      "Thiago Peres — CTO Rally. 2x founder, ex-PM lead at Stripe, Meta, Booking and supply chain tech (project44). CS dropout. Acquired by biggest e-commerce in LATAM at 22yo."
+    ],
+    "source_batch": "Winter 2025",
+    "traction": {
+      "kind": "yc_batch",
+      "detail": "Winter 2025 admission",
+      "url": "https://www.ycombinator.com/companies/rally-3"
+    },
+    "evidence": [
+      {
+        "id": "ev_c7a64134",
+        "url": "https://www.ycombinator.com/companies/rally-3",
+        "source": "yc",
+        "retrieved_at": "2026-08-17T09:54:39.886574Z",
+        "snippet": "Rally is a financial platform for businesses that operate vehicle fleets. We're starting in Europe, where over €1 trillion is spent annually on fuel, charging, maintenance, and other fleet expenses - most of it still running on legacy networks built in the 1960s.\r\n\r\nWe set a new standard for fleet finance by streamlining payments and automating workflows across bookkeeping, credit, and driver payroll, helping real-world businesses like delivery services, construction crews, and service technicia"
+      },
+      {
+        "id": "ev_49ebc6c9",
+        "url": "https://www.getrally.com/",
+        "source": "homepage",
+        "retrieved_at": "2026-08-17T09:54:39.886574Z",
+        "snippet": "Modern European fleet cards for fuel, EV charging and expenses, with broad Visa acceptance, real-time controls and zero hidden fees."
+      }
+    ],
+    "sourced_at": "2026-08-17T09:54:39.886574Z"
+  },
+  {
+    "slug": "salespatriot",
+    "name": "SalesPatriot",
+    "website": "https://www.salespatriot.com/",
+    "one_liner": "AI powered operating system for distributors and OEMs",
+    "founders": [
+      "Nelson Ray — Helping manufacturers win DoD RFQ solicitations. Full-stack & Sales",
+      "Ben Rhodes-Kropf — Ben, Co-Founder & CTO, started programming at the age of nine. Before starting SalesPatriot, he researched quantization techniques of LLMs at MIT’s Han Lab, and started his first company Trace. He also applied his AI skills to synthetic data research he pursued in collaboration with DARPA. Ben's grandfather and great grandfather were both Air Force pilots. He hopes to uphold their legacy by helping today’s defense efforts through SalesPatriot.",
+      "Maciej Szymczyk — Maciej grew up in Poland, graduating with a maximum score (45/45) in the International Baccalaureate Diploma Program. He then came to Berkeley on a full scholarship from Rafal Brzoska Foundation to study Electrical Engineering & Computer Science, Business Administration, and Mathematics through the Management, Entrepreneurship, & Technology program.\n\nBefore college, he did ML research at the Human Brain Project and worked on InPost's Data & AI algorithms."
+    ],
+    "source_batch": "Winter 2025",
+    "traction": {
+      "kind": "yc_batch",
+      "detail": "Winter 2025 admission",
+      "url": "https://www.ycombinator.com/companies/salespatriot"
+    },
+    "evidence": [
+      {
+        "id": "ev_4adf727a",
+        "url": "https://www.ycombinator.com/companies/salespatriot",
+        "source": "yc",
+        "retrieved_at": "2026-08-17T09:54:42.677708Z",
+        "snippet": "SalesPatriot is a back-office operating system for distributors and OEMS. We build custom AI workflows for sales and supply chain teams to manage procurement, requests for quote and purchase orders.\r\n\r\nIn large orgs that operate as key nodes of the supply chain data is scattered across twelve systems. Quotes get lost and Executives lack visibility. Supply chain workflows are time consuming because data isn't where it needs to be in the format it needs to be.\r\n\r\nEmployees are stuck between their "
+      },
+      {
+        "id": "ev_3966abb8",
+        "url": "https://www.salespatriot.com/",
+        "source": "homepage",
+        "retrieved_at": "2026-08-17T09:54:42.677708Z",
+        "snippet": "We deploy AI into supply chains that the West depends on."
+      }
+    ],
+    "sourced_at": "2026-08-17T09:54:42.677708Z"
+  },
+  {
+    "slug": "trava",
+    "name": "Trava",
+    "website": "https://www.usetrava.com/",
+    "one_liner": "AI agents for global trade compliance",
+    "founders": [
+      "Pushkar Lanka — Founder & CEO at Trava. I was previously an Engineering Manager at Plaid, where I ran the Privacy and Risk engineering org. Before that, I was an early engineer on Meta's blockchain team (Libra/Novi)."
+    ],
+    "source_batch": "Winter 2025",
+    "traction": {
+      "kind": "yc_batch",
+      "detail": "Winter 2025 admission",
+      "url": "https://www.ycombinator.com/companies/trava"
+    },
+    "evidence": [
+      {
+        "id": "ev_23122399",
+        "url": "https://www.ycombinator.com/companies/trava",
+        "source": "yc",
+        "retrieved_at": "2026-08-17T09:54:44.361143Z",
+        "snippet": "Trava is building AI agents for global trade compliance. Importers lose billions each year to duty overpayments and filing errors. Trava audits customs entries and automates classification to help importers protect margins and stay compliant at scale."
+      },
+      {
+        "id": "ev_9e33975d",
+        "url": "https://www.usetrava.com/",
+        "source": "homepage",
+        "retrieved_at": "2026-08-17T09:54:44.361143Z",
+        "snippet": "Trava is the AI compliance platform built for global trade, helping importers protect margin, reduce risk, and scale with confidence."
+      }
+    ],
+    "sourced_at": "2026-08-17T09:54:44.361143Z"
+  },
+  {
+    "slug": "cardamon",
+    "name": "Cardamon",
+    "website": "https://cardamon.ai/",
+    "one_liner": "AI compliance co-pilot for regulated financial businesses",
+    "founders": [
+      "Areg Nzsdejan — Formerly Product Owner at Revolut leading Diversified Assets & Engagement teams, managing 14 engineers and launching ETFs, EU stocks and Bonds to millions of customers. Prior to that worked as a management consultant at Oliver Wyman and studied Mechanical Engineering at Imperial College London.",
+      "Dmytro Astakhov — Formerly Senior Software Engineer at Revolut leading development of ETFs and EU stocks to millions of customers."
+    ],
+    "source_batch": "Winter 2025",
+    "traction": {
+      "kind": "yc_batch",
+      "detail": "Winter 2025 admission",
+      "url": "https://www.ycombinator.com/companies/cardamon"
+    },
+    "evidence": [
+      {
+        "id": "ev_b246e73e",
+        "url": "https://www.ycombinator.com/companies/cardamon",
+        "source": "yc",
+        "retrieved_at": "2026-08-17T09:54:45.748148Z",
+        "snippet": "Cardamon is an AI powered platform that ingests relevant regulation, understands what applies to each regulated financial firm, and gets compliance officers from regulation, to obligations, to product requirements in minutes - not weeks.\r\n\r\nFinancial firms face a host of complex regulations that make it incredibly painful to launch and maintain products in a compliant way. As a Product team at Revolut, we felt this pain deeply ourselves - we had products ready to launch but stuck in compliance l"
+      },
+      {
+        "id": "ev_7ab6e533",
+        "url": "https://cardamon.ai/",
+        "source": "homepage",
+        "retrieved_at": "2026-08-17T09:54:45.748148Z",
+        "snippet": "Auditable AI agents for automating regulatory compliance - getting you from regulation to product in minutes not months."
+      }
+    ],
+    "sourced_at": "2026-08-17T09:54:45.748148Z"
+  },
+  {
+    "slug": "mastra",
+    "name": "Mastra",
+    "website": "https://mastra.ai/",
+    "one_liner": "The Javascript framework for building AI agents, from the Gatsby devs",
+    "founders": [
+      "Sam Bhagwat — Founder/CEO of Mastra. Spent last ~8yrs as cofounder of Gatsby.js, an open-source React website framework, scaled to $5M ARR, sold to Netlify. Eng <20 at Zenefits (W13) and Plangrid (W12). Spent two years knocking doors. Stanford '11.",
+      "Abhi Aiyer — Founder/CTO of Mastra. Principal eng & lead of >100 person eng org at Netlify. Built Gatsby Cloud infra that ran 10s of thousands of build nodes, served billions of files, and 100s of TB of monthly bandwidth.",
+      "Shane Thomas — Founder/CPO of Mastra. Prev: built Audiofeed (AI podcasting). Staff eng / head of product @ Gatsby. 15+ years in open source. State wrestling champion."
+    ],
+    "source_batch": "Winter 2025",
+    "traction": {
+      "kind": "hn_post",
+      "detail": "213 pts, 32 comments",
+      "url": "https://news.ycombinator.com/item?id=44241202"
+    },
+    "evidence": [
+      {
+        "id": "ev_09770580",
+        "url": "https://www.ycombinator.com/companies/mastra",
+        "source": "yc",
+        "retrieved_at": "2026-08-17T09:54:47.053541Z",
+        "snippet": "Mastra is the easiest way to build a production AI application, built by the team that brought you Gatsby. We provide a complete set of AI primitives: workflows for complex operations, agents for autonomous decisions, RAG for knowledge integration, and evals for quality & accuracy. Mastra is open-source, modular, and built in Typescript for product developers. You can deploy Mastra on any cloud, and it gives you a straightforward syntax to solve the hardest problems building with AI: human-in-th"
+      },
+      {
+        "id": "ev_3f2a67b0",
+        "url": "https://news.ycombinator.com/item?id=44241202",
+        "source": "hn",
+        "retrieved_at": "2026-08-17T09:54:47.053541Z",
+        "snippet": "Show HN: A “Course” as an MCP Server"
+      },
+      {
+        "id": "ev_c985249d",
+        "url": "https://mastra.ai/",
+        "source": "homepage",
+        "retrieved_at": "2026-08-17T09:54:47.053541Z",
+        "snippet": "Ship AI agents that reason, remember, and act in TypeScript. Mastra provides memory, tools, MCP, and observability to go from prototype to production."
+      }
+    ],
+    "sourced_at": "2026-08-17T09:54:47.053541Z"
+  },
+  {
+    "slug": "mesh",
+    "name": "Mesh",
+    "website": "http://www.usemesh.com/",
+    "one_liner": "Eliminating accrual spreadsheets for faster month-end",
+    "founders": [
+      "Erin Kim — Co-Founder and CEO at Mesh. After scaling Carta’s fund accounting business from $20M to $100M, Erin is now focused on helping finance teams close 4+ days faster. By leveraging her experience as an early finance hire at Carta, she is building Mesh to automate 90% of the accruals process—eliminating manual spreadsheets with auditable scripts.\n\nErin graduated with a full-ride scholarship from Washington University in St. Louis.",
+      "Nandini Ramakrishnan — Co-Founder and CTO at Mesh. Nandini spent the last 5+ years at Carta building accounting automation workflows, in-house general ledger, fund formation software, lending products (i.e. capital call lines), and auditor portals. She led a team of 4 engineers as an engineering manager. Prior to that, she co-authored a Machine Learning patent at eBay. \n\nShe holds bachelor’s and master’s degrees in electrical and computer engineering from Carnegie Mellon."
+    ],
+    "source_batch": "Winter 2025",
+    "traction": {
+      "kind": "yc_batch",
+      "detail": "Winter 2025 admission",
+      "url": "https://www.ycombinator.com/companies/mesh-2"
+    },
+    "evidence": [
+      {
+        "id": "ev_ee8e9955",
+        "url": "https://www.ycombinator.com/companies/mesh-2",
+        "source": "yc",
+        "retrieved_at": "2026-08-17T09:54:48.389128Z",
+        "snippet": "Month-end shouldn’t be a race against the clock.\r\n\r\nFor most mid-to-enterprise finance teams, accruals are a manual bottleneck. Chasing missing invoices and manually updating spreadsheets can eat up 4+ days of every month-end close.\r\n\r\nMesh changes the timeline. We automate 90% of the accruals process by capturing real-time usage and service signals directly from your AP inbox, Slack, Teams, and historical journals. We turn fragmented data into audit-ready outputs, so you can stop guessing and s"
+      },
+      {
+        "id": "ev_8ed6fb37",
+        "url": "http://www.usemesh.com/",
+        "source": "homepage",
+        "retrieved_at": "2026-08-17T09:54:48.389128Z",
+        "snippet": "Mesh replaces accrual spreadsheets with auditable scripts, aggregating real-time signals from your procurement system, AP inbox, Slack, and Teams."
+      }
+    ],
+    "sourced_at": "2026-08-17T09:54:48.389128Z"
+  },
+  {
+    "slug": "promptless",
+    "name": "Promptless",
+    "website": "https://promptless.ai/",
+    "one_liner": "An AI teammate that automatically updates your customer-facing docs",
+    "founders": [
+      "Prithvi Ramakrishnan — Prithvi co-founded Promptless.\n\nBefore Promptless, he served as VP of Product & Engineering at Bond, a fintech infrastructure startup acquired by NYSE:FIS in 2023. There he saw firsthand the effort required to maintain hundreds of tutorials and guides and the outsized business impact of world-class documentation.\n\nPrithvi graduated from Stanford in 2015 (B.S. CS, AI track). He was also a 4-time International Mathematical Olympiad (IMO) participant, including as the youngest participant in 2008.",
+      "Frances Liu — Frances is building Promptless, helping companies keep customer-facing content up-to-date. Prior to Promptless, Frances led product, ML/AI engineering, and LLM ops on petabyte scale at Cloudflare, OneSignal, and Graft. Yale undergrad. Stanford PhD drop-out. Has published LLM research."
+    ],
+    "source_batch": "Winter 2025",
+    "traction": {
+      "kind": "hn_post",
+      "detail": "2 pts, 0 comments",
+      "url": "https://news.ycombinator.com/item?id=47506051"
+    },
+    "evidence": [
+      {
+        "id": "ev_42b945da",
+        "url": "https://www.ycombinator.com/companies/promptless",
+        "source": "yc",
+        "retrieved_at": "2026-08-17T09:54:49.759821Z",
+        "snippet": "Docs are integral to a great customer experience, but managing them is a challenging, multi-team effort. The most successful companies recognize that fantastic docs drive adoption and bad ones cause customers to churn. Promptless is used by fast-growing startups and Fortune 500 enterprises alike to automatically update docs based on feature releases, support tickets, internal Slack conversations, and more.\r\n\r\nPromptless is designed to be flexible—it can integrate with any docs platform, be trigg"
+      },
+      {
+        "id": "ev_766da63a",
+        "url": "https://news.ycombinator.com/item?id=47506051",
+        "source": "hn",
+        "retrieved_at": "2026-08-17T09:54:49.759821Z",
+        "snippet": "My practical guide for optimizing docs for agents"
+      },
+      {
+        "id": "ev_03057200",
+        "url": "https://promptless.ai/",
+        "source": "homepage",
+        "retrieved_at": "2026-08-17T09:54:49.759821Z",
+        "snippet": "Turn agent session traces and product changes into governed improvements to your agent instructions and customer-facing docs."
+      }
+    ],
+    "sourced_at": "2026-08-17T09:54:49.759821Z"
+  },
+  {
+    "slug": "quantstruct",
+    "name": "Quantstruct",
+    "website": "https://quantstruct.com/",
+    "one_liner": "AI documentation engineer – test & autoimprove stale product docs",
+    "founders": [
+      "Sarthak Srinivas — Cofounder of Quantstruct (YC W25). Built an agent developer platform from 0 to mid-$X million as product lead while onboarding multiple Fortune 100 companies at Moveworks. Published and reviewed 1000s of documentation guide updates to support customers and internal teams, before realizing agent-based workflows could do his job. Ex-Kleiner Perkins fellow. Published research with Google Glass inventor (who coined “wearable computing”) at Georgia Tech.",
+      "Newman Hu — Co-founder of Quantstruct. We're building AI agents to create the best documentation for your product. Newman previously built search infrastructure at Moveworks and Replit (YC W18), where he managed mission critical platforms powering Gen AI experiences for Fortune 500 companies. EECS @ Berkeley"
+    ],
+    "source_batch": "Winter 2025",
+    "traction": {
+      "kind": "yc_batch",
+      "detail": "Winter 2025 admission",
+      "url": "https://www.ycombinator.com/companies/quantstruct"
+    },
+    "evidence": [
+      {
+        "id": "ev_8938910b",
+        "url": "https://www.ycombinator.com/companies/quantstruct",
+        "source": "yc",
+        "retrieved_at": "2026-08-17T09:54:50.963054Z",
+        "snippet": "Quantstruct automatically creates and improves product documentation, implementation guides, and changelogs for API & SDK products, web-based enterprise software, and internal applications.\r\n\r\nQuantstruct identifies gaps in your knowledge base based on each product release or unfulfilled customer query. It uses multiple AI agents to search existing knowledge sources, test existing docs for validity and style guidelines, and clicks, scrolls, and uses enterprise software through a web browser to g"
+      },
+      {
+        "id": "ev_24071d8e",
+        "url": "https://quantstruct.com/",
+        "source": "homepage",
+        "retrieved_at": "2026-08-17T09:54:50.963054Z",
+        "snippet": "Robots for linen handling, bed turnover, and bathroom cleaning."
+      }
+    ],
+    "sourced_at": "2026-08-17T09:54:50.963054Z"
+  },
+  {
+    "slug": "vetnio",
+    "name": "Vetnio",
+    "website": "https://vetnio.com/",
+    "one_liner": "AI Copilot that automates admin work for veterinary professionals",
+    "founders": [
+      "Arman Karégar — Founded three companies and served as the youngest board member ever for two firms with a combined turnover of 100 million euros. Elected politician during university and have 20 years of expertise in audio processing; from optimizing voice recordings to designing custom instruments by shaping waveforms using oscillators, envelopes, and LFOs. Master's in Industrial Engineering and Management from KTH Royal Institute of Technology, with additional studies at Nanyang Technological Institute.",
+      "Max Henry Xie — Second time founder. Self-taught developer with many chess and hackathon wins. Built machine learning models to combat fraud at big banks. Studied industrial engineering and management at KTH (Stockholm). Dropped out of school to work at Accenture (deployed engineer), then Paypal (AI / data scientist) before founding first his start-up, now working on his second. Accidental tiktok-influencer."
+    ],
+    "source_batch": "Winter 2025",
+    "traction": {
+      "kind": "yc_batch",
+      "detail": "Winter 2025 admission",
+      "url": "https://www.ycombinator.com/companies/vetnio"
+    },
+    "evidence": [
+      {
+        "id": "ev_ae41b734",
+        "url": "https://www.ycombinator.com/companies/vetnio",
+        "source": "yc",
+        "retrieved_at": "2026-08-17T09:54:52.172101Z",
+        "snippet": "Veterinarians spend 40% of their time on admin work, >20% on note taking alone. We're here to change that so they can focus on what really matters - providing the best care possible for animals."
+      },
+      {
+        "id": "ev_7512df09",
+        "url": "https://vetnio.com/",
+        "source": "homepage",
+        "retrieved_at": "2026-08-17T09:54:52.172101Z",
+        "snippet": "Vetnio is an AI scribe that records conversations between veterinary professionals and pet owners, automatically generating clinical notes for the meetings. It saves veterinary professionals time, allowing them to focus more on their patients."
+      }
+    ],
+    "sourced_at": "2026-08-17T09:54:52.172101Z"
+  }
+]
