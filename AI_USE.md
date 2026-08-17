@@ -23,6 +23,8 @@ everything in this repo was read and revised by me before commit.
 | `docs/decisions/0001-*.md` | Claude Code, from decisions we made jointly | Facts and rationale are ours; prose is drafted. |
 | `docs/thesis.md` | Karthik | Written by hand, deliberately. The scores mean nothing if the thesis isn't mine. |
 | `docs/worklog.md` | Karthik | Same reason. |
+| `src/triage/schemas.py`, `evidence.py`, `util.py` | Claude Code, design co-decided | The evidence-traceability model (ADR 0002, computed `total_score`) was a joint call, drafted by Claude Code and reviewed line-by-line before commit. |
+| `tests/test_schemas.py`, `test_evidence.py`, `test_util.py`, `conftest.py` | Claude Code | Test cases target the specific guarantees schemas.py claims to make (see each test module's docstring); reviewed for whether they'd actually catch a regression, not just pass. |
 | _(rows added per phase)_ | | |
 
 ## Where I overrode the AI
