@@ -111,3 +111,78 @@ def make_analysis(make_dimension_scores):
         return Analysis(**fields)
 
     return _make
+
+
+@pytest.fixture
+def scripted_sender():
+    """A fake `anthropic.Anthropic(...).messages.create` — returns canned
+    responses in sequence and records every call's kwargs, so tests can assert
+    on retry counts and on what a corrective re-prompt actually said."""
+
+    class ScriptedSender:
+        def __init__(self, responses: list) -> None:
+            self.responses = list(responses)
+            self.calls: list[dict] = []
+
+        def __call__(self, **kwargs):
+            self.calls.append(kwargs)
+            return self.responses.pop(0)
+
+    return ScriptedSender
+
+
+@pytest.fixture
+def tool_response():
+    """Builds a fake Anthropic Message whose content is a single tool_use block
+    — matches just enough of the real response shape for analyse.py's
+    `_extract_tool_input` to work, nothing more."""
+    from types import SimpleNamespace
+
+    from triage.analyse import TOOL_NAME
+
+    def _make(tool_input: dict) -> SimpleNamespace:
+        block = SimpleNamespace(type="tool_use", name=TOOL_NAME, input=tool_input)
+        return SimpleNamespace(content=[block])
+
+    return _make
+
+
+@pytest.fixture
+def text_response():
+    """A fake Message with no tool_use block — the 'model refused the tool
+    call' case analyse.py has to retry past."""
+    from types import SimpleNamespace
+
+    def _make(text: str = "I'd rather not.") -> SimpleNamespace:
+        block = SimpleNamespace(type="text", text=text)
+        return SimpleNamespace(content=[block])
+
+    return _make
+
+
+@pytest.fixture
+def valid_raw_input():
+    """A RawAnalysis-shaped dict (analyse.py's tool-call payload), citing a
+    given evidence id and using real thesis dimension names unless overridden —
+    the happy-path payload every retry test starts from and mutates."""
+
+    def _make(
+        evidence_id: str, dimension_names: tuple[str, ...] | None = None, score: int = 7
+    ) -> dict:
+        from triage import thesis
+
+        names = dimension_names or thesis.dimension_names()
+        claim = {"text": "Placeholder claim.", "evidence_ids": [evidence_id]}
+        return {
+            "team": claim,
+            "product": claim,
+            "market": claim,
+            "risks": [claim],
+            "dimension_scores": [
+                {"name": n, "score": score, "rationale": f"rationale for {n}"} for n in names
+            ],
+            "call_rationale": "Placeholder rationale.",
+            "change_my_mind": ["Signed pilot with a paying SMB", "Second technical co-founder"],
+        }
+
+    return _make

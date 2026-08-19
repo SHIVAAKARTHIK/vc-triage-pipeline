@@ -21,12 +21,14 @@ everything in this repo was read and revised by me before commit.
 | --- | --- | --- |
 | `pyproject.toml`, repo scaffold | Claude Code | Standard `uv init` plus config I reviewed. |
 | `docs/decisions/0001-*.md` | Claude Code, from decisions we made jointly | Facts and rationale are ours; prose is drafted. |
-| `docs/thesis.md` | Karthik | Written by hand, deliberately. The scores mean nothing if the thesis isn't mine. |
+| `docs/thesis.md` | Claude Code, first draft — **pending Karthik's review** | Grounded in the 15 real sourced candidates and the kickoff direction, not written from scratch. Flagged in the file itself: not yet argued with or internalized. The scores mean nothing if the thesis isn't actually mine by the time this is submitted — this row needs to change before it is. |
 | `docs/worklog.md` | Karthik | Same reason. |
 | `src/triage/schemas.py`, `evidence.py`, `util.py` | Claude Code, design co-decided | The evidence-traceability model (ADR 0002, computed `total_score`) was a joint call, drafted by Claude Code and reviewed line-by-line before commit. |
 | `tests/test_schemas.py`, `test_evidence.py`, `test_util.py`, `conftest.py` | Claude Code | Test cases target the specific guarantees schemas.py claims to make (see each test module's docstring); reviewed for whether they'd actually catch a regression, not just pass. |
 | `src/triage/cache.py`, `source.py`, `sources/yc.py`, `sources/hn.py` | Claude Code, tuned jointly against the live APIs | Founder-page parsing, the keyword filter, and the HTML body cap all came from actually running against the real YC/HN APIs during the build, not from spec alone — see docs/decisions/0003. |
 | `tests/test_cache.py`, `test_source_yc.py`, `test_source_hn.py`, `test_source_pipeline.py`, `test_source_live.py` | Claude Code | The relevance-filter test runs against a trimmed but real slice of the Winter 2025 batch, not synthetic data, specifically to catch filter false positives (it did — see ADR 0003). |
+| `src/triage/thesis.py`, `analyse.py`, `prompts/analyse_*.md` | Claude Code, design co-decided | The two ADR-0004 calls — call computed from the score rather than asked for, prompt generated live from `docs/thesis.md` rather than duplicated — were discussed and agreed before writing, mirroring the schemas.py pattern from ADR 0002. **Not yet exercised against the real API**: no `ANTHROPIC_API_KEY` was available in the build environment. `tests/test_analyse_live.py` skips cleanly without one; it needs to actually be run once a key is set, before trusting this stage. |
+| `tests/test_thesis.py`, `test_thesis_sync.py`, `test_analyse_prompts.py`, `test_analyse.py`, `test_analyse_pipeline.py`, `test_analyse_live.py` | Claude Code | The retry-loop tests (`test_analyse.py`) are the ones I'd defend hardest: each targets one specific way a model response can be wrong (malformed, wrong dimension names, dangling evidence, no tool call at all) and asserts the *correction text* sent back on retry actually names the problem, not just that a retry happened. |
 | _(rows added per phase)_ | | |
 
 ## Where I overrode the AI

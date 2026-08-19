@@ -5,6 +5,7 @@ from pathlib import Path
 import typer
 
 from triage import __version__
+from triage import analyse as analyse_stage
 from triage import source as source_stage
 
 app = typer.Typer(
@@ -44,6 +45,29 @@ def source(
     """Source stage: rank a YC batch by thesis relevance, write data/candidates.json."""
     candidates = source_stage.run(batch=batch, limit=limit, cache_dir=cache_dir, out_path=out)
     typer.echo(f"wrote {len(candidates)} candidates to {out}")
+
+
+@app.command()
+def analyse(
+    candidates: Path = typer.Option(
+        analyse_stage.DEFAULT_CANDIDATES_PATH, help="Input candidates file."
+    ),
+    out_dir: Path = typer.Option(
+        analyse_stage.DEFAULT_ANALYSES_DIR, help="Where to write analyses."
+    ),
+    model: str = typer.Option(analyse_stage.DEFAULT_MODEL, help="Anthropic model id."),
+    max_attempts: int = typer.Option(
+        3, min=1, max=5, help="Retries per candidate on invalid model output."
+    ),
+) -> None:
+    """Analyse stage: score each candidate against docs/thesis.md via an LLM call.
+
+    Reads ANTHROPIC_API_KEY from the environment.
+    """
+    analyses = analyse_stage.run(
+        candidates_path=candidates, out_dir=out_dir, model=model, max_attempts=max_attempts
+    )
+    typer.echo(f"wrote {len(analyses)} analyses to {out_dir}")
 
 
 if __name__ == "__main__":

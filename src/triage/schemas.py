@@ -172,5 +172,17 @@ class Analysis(BaseModel):
     @property
     def total_score(self) -> int:
         """0-100, computed here — never accepted as LLM output. See module docstring."""
-        weighted = sum(d.score / 10 * d.weight for d in self.dimension_scores)
-        return round(weighted)
+        return weighted_total(self.dimension_scores)
+
+
+def weighted_total(dimension_scores: list[DimensionScore]) -> int:
+    """0-100 weighted score from per-dimension ratings — the one formula both
+    `Analysis.total_score` and `analyse.py` use.
+
+    A standalone function, not just a method, because analyse.py needs this
+    number *before* an Analysis can be constructed: `call` is chosen from the
+    weighted total (docs/decisions/0004), and `call` is a required constructor
+    argument. Calling this function first and Analysis.total_score afterwards
+    are the same formula applied to the same list, so the two can't drift apart.
+    """
+    return round(sum(d.score / 10 * d.weight for d in dimension_scores))
