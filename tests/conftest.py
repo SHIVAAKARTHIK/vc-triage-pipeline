@@ -136,15 +136,18 @@ def tool_response():
     """Builds a fake OpenAI ChatCompletion whose message carries a single
     matching tool_call — matches just enough of the real response shape
     (choices[0].message.tool_calls[0].function.{name,arguments}) for
-    analyse.py's `_extract_tool_input` to work, nothing more. `arguments` is a
-    JSON *string*, same as the real API, not a dict."""
+    llm.extract_tool_arguments to work, nothing more. `arguments` is a JSON
+    *string*, same as the real API, not a dict.
+
+    Defaults to analyse.py's tool name (the fixture's original, still most
+    common use); pass `tool_name=` explicitly for any other stage (eval.py)."""
     import json
     from types import SimpleNamespace
 
-    from triage.analyse import TOOL_NAME
+    from triage.analyse import TOOL_NAME as ANALYSE_TOOL_NAME
 
-    def _make(tool_input: dict) -> SimpleNamespace:
-        function = SimpleNamespace(name=TOOL_NAME, arguments=json.dumps(tool_input))
+    def _make(tool_input: dict, tool_name: str = ANALYSE_TOOL_NAME) -> SimpleNamespace:
+        function = SimpleNamespace(name=tool_name, arguments=json.dumps(tool_input))
         tool_call = SimpleNamespace(function=function)
         message = SimpleNamespace(tool_calls=[tool_call], content=None)
         return SimpleNamespace(choices=[SimpleNamespace(message=message)])

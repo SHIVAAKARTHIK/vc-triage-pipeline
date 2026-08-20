@@ -123,3 +123,15 @@ class TestRun:
 
         text = (out_dir / "alpha.md").read_text(encoding="utf-8")
         assert "Take a meeting" in text
+
+    def test_zero_analyses_produces_zero_memos_without_error(self, tmp_path) -> None:
+        candidates_path = tmp_path / "candidates.json"
+        candidates_path.write_text(json.dumps([]), encoding="utf-8")
+        analyses_dir = tmp_path / "analyses"
+        analyses_dir.mkdir()
+
+        written = run(
+            candidates_path=candidates_path, analyses_dir=analyses_dir, out_dir=tmp_path / "memos"
+        )
+
+        assert written == []

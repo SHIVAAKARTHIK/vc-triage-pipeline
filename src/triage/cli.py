@@ -6,6 +6,7 @@ import typer
 
 from triage import __version__
 from triage import analyse as analyse_stage
+from triage import eval as eval_stage
 from triage import memo as memo_stage
 from triage import pipeline as pipeline_stage
 from triage import source as source_stage
@@ -85,6 +86,20 @@ def memo(
     """Memo stage: render each analysis to a one-page Markdown memo."""
     paths = memo_stage.run(candidates_path=candidates, analyses_dir=analyses_dir, out_dir=out_dir)
     typer.echo(f"wrote {len(paths)} memos to {out_dir}")
+
+
+@app.command()
+def eval(
+    memos_dir: Path = typer.Option(eval_stage.DEFAULT_MEMOS_DIR, help="Input memos directory."),
+    out: Path = typer.Option(eval_stage.DEFAULT_OUT_PATH, help="Where to write judgments."),
+    model: str = typer.Option(eval_stage.DEFAULT_MODEL, help="OpenAI model id."),
+) -> None:
+    """Eval stage: LLM-judge each memo on traceability and clarity, write data/eval.json.
+
+    Reads OPENAI_API_KEY from the environment.
+    """
+    results = eval_stage.run(memos_dir=memos_dir, out_path=out, model=model)
+    typer.echo(f"wrote {len(results)} judgments to {out}")
 
 
 @app.command()

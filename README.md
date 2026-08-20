@@ -36,6 +36,14 @@ validator-passed `Analysis` per candidate to `data/analyses/<slug>.json`.
 back to exactly the evidence that analysis cites (see `docs/decisions/0006`). Pure
 rendering — no network, no LLM, no judgement calls.
 
+`eval` (optional, run separately — not part of `triage run`) LLM-judges each memo on
+two things structural validation *can't* check: does the cited evidence actually support
+its claim, and could a partner find the call in 60 seconds. See `docs/decisions/0007`.
+
+```bash
+OPENAI_API_KEY=... uv run triage eval
+```
+
 The seed input is a YC batch rather than a free-text topic query — a deliberate scoping
 choice (`docs/decisions/0003`), and one of the brief's own named examples of a valid
 seed input ("a feed like the YC W25 batch").
@@ -43,17 +51,24 @@ seed input ("a feed like the YC W25 batch").
 ## How it works
 
 Three stages, each reading the previous stage's artefact from disk so any stage can be
-re-run in isolation:
+re-run in isolation, plus an optional eval pass:
 
 | Stage | Reads | Writes |
 | --- | --- | --- |
 | `source` | a YC batch | `data/candidates.json` |
 | `analyse` | `data/candidates.json` | `data/analyses/<slug>.json` |
 | `memo` | `data/candidates.json` + `data/analyses/<slug>.json` | `out/memos/<slug>.md` |
+| `eval` | `out/memos/*.md` | `data/eval.json` |
 
 Raw HTTP responses are cached under `data/raw/` and committed, so `source` is replayable
-offline and the test suite needs no network. `data/analyses/` and `out/memos/` are also
-committed — real output from a real run against `gpt-4o-mini`, not placeholders.
+offline and the test suite needs no network. `data/analyses/`, `out/memos/`, and
+`data/eval.json` are also committed — real output from a real run against `gpt-4o-mini`,
+not placeholders.
+
+**Robustness:** every network fetch, LLM call, and evidence citation degrades gracefully
+rather than crashing the whole run — dead links, missing founder data, no HN coverage,
+malformed model output, an empty candidate list. `docs/decisions/0007` is the
+consolidated map of what's handled where.
 
 ## Reading this repo
 

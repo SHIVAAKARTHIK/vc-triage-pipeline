@@ -33,6 +33,7 @@ from pydantic import BaseModel, Field, ValidationError
 
 from triage import thesis
 from triage.evidence import DanglingEvidenceError, check_evidence_integrity
+from triage.llm import LLMResponseError, extract_tool_arguments, function_tool_schema
 from triage.schemas import Analysis, Candidate, DimensionScore, NarrativeClaim, weighted_total
 
 logger = logging.getLogger(__name__)
@@ -47,10 +48,6 @@ TOOL_NAME = "submit_analysis"
 _PROMPTS_DIR = Path(__file__).resolve().parent.parent.parent / "prompts"
 _SYSTEM_TEMPLATE_PATH = _PROMPTS_DIR / "analyse_system.md"
 _CANDIDATE_TEMPLATE_PATH = _PROMPTS_DIR / "analyse_candidate.md"
-
-
-class LLMResponseError(RuntimeError):
-    """The model's response couldn't be turned into a usable RawAnalysis."""
 
 
 class AnalysisFailedError(RuntimeError):
@@ -94,31 +91,6 @@ def render_system_prompt() -> str:
 def render_candidate_prompt(candidate: Candidate) -> str:
     template = Template(_CANDIDATE_TEMPLATE_PATH.read_text(encoding="utf-8"))
     return template.render(candidate=candidate)
-
-
-def _tool_schema() -> dict:
-    return {
-        "type": "function",
-        "function": {
-            "name": TOOL_NAME,
-            "description": "Submit the structured analysis for one candidate.",
-            "parameters": RawAnalysis.model_json_schema(),
-        },
-    }
-
-
-def _extract_tool_input(response: Any) -> dict:
-    """OpenAI returns arguments as a JSON *string*, not a dict — a malformed
-    one is exactly as retry-able as a schema mismatch, so a bad JSON parse here
-    raises the same LLMResponseError analyse_candidate already catches."""
-    message = response.choices[0].message
-    for tool_call in message.tool_calls or []:
-        if tool_call.function.name == TOOL_NAME:
-            try:
-                return json.loads(tool_call.function.arguments)
-            except json.JSONDecodeError as exc:
-                raise LLMResponseError(f"tool call arguments were not valid JSON: {exc}") from exc
-    raise LLMResponseError(f"model response did not include a {TOOL_NAME!r} tool call")
 
 
 def _build_analysis(candidate: Candidate, raw: RawAnalysis, *, model_used: str) -> Analysis:
@@ -178,7 +150,11 @@ def analyse_candidate(
         response = send_message(
             model=model,
             max_completion_tokens=DEFAULT_MAX_COMPLETION_TOKENS,
-            tools=[_tool_schema()],
+            tools=[
+                function_tool_schema(
+                    TOOL_NAME, "Submit the structured analysis for one candidate.", RawAnalysis
+                )
+            ],
             tool_choice={"type": "function", "function": {"name": TOOL_NAME}},
             messages=[
                 {"role": "system", "content": system_prompt},
@@ -187,7 +163,7 @@ def analyse_candidate(
         )
 
         try:
-            raw = RawAnalysis(**_extract_tool_input(response))
+            raw = RawAnalysis(**extract_tool_arguments(response, TOOL_NAME))
         except (LLMResponseError, ValidationError) as exc:
             last_error = exc
             correction = f"response did not parse: {exc}"

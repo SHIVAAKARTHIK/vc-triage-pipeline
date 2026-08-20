@@ -88,6 +88,25 @@ def test_memo_command_invokes_the_memo_stage(monkeypatch, tmp_path) -> None:
     assert "wrote 0 memos" in result.stdout
 
 
+def test_eval_command_invokes_the_eval_stage(monkeypatch, tmp_path) -> None:
+    """CLI wiring only: does `triage eval` call eval_stage.run with the flags
+    it was given? The stage's own behaviour is covered in test_eval_pipeline.py."""
+    calls = {}
+
+    def fake_run(memos_dir, out_path, model):
+        calls["args"] = (memos_dir, out_path, model)
+        return []
+
+    monkeypatch.setattr("triage.cli.eval_stage.run", fake_run)
+
+    out = tmp_path / "eval.json"
+    result = runner.invoke(app, ["eval", "--model", "gpt-4o", "--out", str(out)])
+
+    assert result.exit_code == 0
+    assert calls["args"][2] == "gpt-4o"
+    assert "wrote 0 judgments" in result.stdout
+
+
 def test_run_command_invokes_the_pipeline(monkeypatch) -> None:
     """CLI wiring only: does `triage run` call pipeline_stage.run with the
     flags it was given? The chaining itself is covered in test_pipeline.py."""

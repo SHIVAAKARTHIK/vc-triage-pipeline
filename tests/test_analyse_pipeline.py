@@ -107,3 +107,19 @@ class TestRun:
         assert written["candidate_slug"] == "alpha"
         assert written["thesis_version"] == thesis.thesis_version()
         assert 0 <= written["total_score"] <= 100
+
+    def test_zero_candidates_produces_zero_analyses_without_error(
+        self, tmp_path, scripted_sender
+    ) -> None:
+        """A source run that legitimately finds nothing relevant (an empty or
+        very off-thesis batch) shouldn't crash the next stage."""
+        candidates_path = tmp_path / "candidates.json"
+        candidates_path.write_text(json.dumps([]), encoding="utf-8")
+        sender = scripted_sender([])  # never called
+
+        analyses = run(
+            candidates_path=candidates_path, out_dir=tmp_path / "analyses", send_message=sender
+        )
+
+        assert analyses == []
+        assert list((tmp_path / "analyses").glob("*.json")) == []

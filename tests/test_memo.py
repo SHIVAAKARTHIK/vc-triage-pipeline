@@ -144,6 +144,25 @@ class TestRenderMemo:
         rendered = render_memo(candidate, analysis)
         assert "- Jane Doe — line one line two, still her bio" in rendered
 
+    def test_renders_cleanly_when_the_candidate_has_no_founders(
+        self, make_candidate, make_evidence, make_analysis
+    ) -> None:
+        """founders=[] is a real, common case (docs/decisions/0003: 'founder
+        signal where findable', not required) -- the memo must still render a
+        complete, well-formed Team section, not an empty gap or a stray
+        template artifact from the {% if candidate.founders %} guard."""
+        ev = make_evidence(url="https://example.com/a")
+        candidate = make_candidate(evidence=[ev], founders=[])
+        analysis = make_analysis(candidate_slug=candidate.slug, evidence_ids=[ev.id])
+
+        rendered = render_memo(candidate, analysis)
+
+        assert "## Team" in rendered
+        assert "{% if" not in rendered
+        assert "{%endif%}" not in rendered
+        # the narrative team text still appears even with no founder bullets
+        assert analysis.team.text in rendered
+
     def test_pipe_characters_in_a_rationale_do_not_break_the_table(
         self, make_candidate, make_evidence, make_analysis, make_dimension_scores
     ) -> None:
