@@ -1,8 +1,10 @@
 """The analyse stage: data/candidates.json in, data/analyses/<slug>.json out.
 
-One tool-forced Anthropic call per candidate, against a prompt built entirely
-from docs/thesis.md (via triage.thesis) and the candidate's own evidence — see
-Fig. 1/2 in the project overview and docs/decisions/0004.
+One tool-forced OpenAI chat-completions call per candidate, against a prompt
+built entirely from docs/thesis.md (via triage.thesis) and the candidate's own
+evidence — see Fig. 1/2 in the project overview, docs/decisions/0004, and
+ADR 0005 (switched from Anthropic to OpenAI mid-build — API key available, not
+a quality judgement).
 
 The model is deliberately asked for less than the final `Analysis` needs:
 `RawAnalysis` has no `total_score` (computed, ADR 0002) and no `call` (computed
@@ -37,8 +39,9 @@ logger = logging.getLogger(__name__)
 
 DEFAULT_CANDIDATES_PATH = Path("data/candidates.json")
 DEFAULT_ANALYSES_DIR = Path("data/analyses")
-DEFAULT_MODEL = "claude-sonnet-5"
-DEFAULT_MAX_TOKENS = 2000
+# Override with --model if this has aged out by the time you're reading it.
+DEFAULT_MODEL = "gpt-4o-mini"
+DEFAULT_MAX_COMPLETION_TOKENS = 2000
 TOOL_NAME = "submit_analysis"
 
 _PROMPTS_DIR = Path(__file__).resolve().parent.parent.parent / "prompts"
@@ -95,16 +98,26 @@ def render_candidate_prompt(candidate: Candidate) -> str:
 
 def _tool_schema() -> dict:
     return {
-        "name": TOOL_NAME,
-        "description": "Submit the structured analysis for one candidate.",
-        "input_schema": RawAnalysis.model_json_schema(),
+        "type": "function",
+        "function": {
+            "name": TOOL_NAME,
+            "description": "Submit the structured analysis for one candidate.",
+            "parameters": RawAnalysis.model_json_schema(),
+        },
     }
 
 
 def _extract_tool_input(response: Any) -> dict:
-    for block in response.content:
-        if getattr(block, "type", None) == "tool_use" and getattr(block, "name", None) == TOOL_NAME:
-            return block.input
+    """OpenAI returns arguments as a JSON *string*, not a dict — a malformed
+    one is exactly as retry-able as a schema mismatch, so a bad JSON parse here
+    raises the same LLMResponseError analyse_candidate already catches."""
+    message = response.choices[0].message
+    for tool_call in message.tool_calls or []:
+        if tool_call.function.name == TOOL_NAME:
+            try:
+                return json.loads(tool_call.function.arguments)
+            except json.JSONDecodeError as exc:
+                raise LLMResponseError(f"tool call arguments were not valid JSON: {exc}") from exc
     raise LLMResponseError(f"model response did not include a {TOOL_NAME!r} tool call")
 
 
@@ -139,13 +152,13 @@ def analyse_candidate(
     model: str = DEFAULT_MODEL,
     max_attempts: int = 3,
 ) -> Analysis:
-    """`send_message` is `anthropic.Anthropic(...).messages.create` in real use
-    (or any object with that call signature) — injected so tests never need a
-    real API key or network access.
+    """`send_message` is `openai.OpenAI(...).chat.completions.create` in real
+    use (or any object with that call signature) — injected so tests never
+    need a real API key or network access.
 
     Retries are stateless single-shot re-prompts with a corrective note, not a
-    threaded tool_result conversation: simpler, and re-sending the full
-    candidate context each attempt is cheap at this candidate count. See ADR 0004.
+    threaded tool-call conversation: simpler, and re-sending the full candidate
+    context each attempt is cheap at this candidate count. See ADR 0004.
     """
     system_prompt = render_system_prompt()
     user_prompt = render_candidate_prompt(candidate)
@@ -164,11 +177,13 @@ def analyse_candidate(
         )
         response = send_message(
             model=model,
-            max_tokens=DEFAULT_MAX_TOKENS,
-            system=system_prompt,
+            max_completion_tokens=DEFAULT_MAX_COMPLETION_TOKENS,
             tools=[_tool_schema()],
-            tool_choice={"type": "tool", "name": TOOL_NAME},
-            messages=[{"role": "user", "content": user_content}],
+            tool_choice={"type": "function", "function": {"name": TOOL_NAME}},
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_content},
+            ],
         )
 
         try:
@@ -223,9 +238,9 @@ def run(
     send_message: Callable[..., Any] | None = None,
 ) -> list[Analysis]:
     if send_message is None:
-        from anthropic import Anthropic
+        from openai import OpenAI
 
-        send_message = Anthropic().messages.create
+        send_message = OpenAI().chat.completions.create
 
     raw_candidates = json.loads(candidates_path.read_text(encoding="utf-8"))
     candidates = [Candidate(**c) for c in raw_candidates]

@@ -115,7 +115,7 @@ def make_analysis(make_dimension_scores):
 
 @pytest.fixture
 def scripted_sender():
-    """A fake `anthropic.Anthropic(...).messages.create` — returns canned
+    """A fake `openai.OpenAI(...).chat.completions.create` — returns canned
     responses in sequence and records every call's kwargs, so tests can assert
     on retry counts and on what a corrective re-prompt actually said."""
 
@@ -133,29 +133,34 @@ def scripted_sender():
 
 @pytest.fixture
 def tool_response():
-    """Builds a fake Anthropic Message whose content is a single tool_use block
-    — matches just enough of the real response shape for analyse.py's
-    `_extract_tool_input` to work, nothing more."""
+    """Builds a fake OpenAI ChatCompletion whose message carries a single
+    matching tool_call — matches just enough of the real response shape
+    (choices[0].message.tool_calls[0].function.{name,arguments}) for
+    analyse.py's `_extract_tool_input` to work, nothing more. `arguments` is a
+    JSON *string*, same as the real API, not a dict."""
+    import json
     from types import SimpleNamespace
 
     from triage.analyse import TOOL_NAME
 
     def _make(tool_input: dict) -> SimpleNamespace:
-        block = SimpleNamespace(type="tool_use", name=TOOL_NAME, input=tool_input)
-        return SimpleNamespace(content=[block])
+        function = SimpleNamespace(name=TOOL_NAME, arguments=json.dumps(tool_input))
+        tool_call = SimpleNamespace(function=function)
+        message = SimpleNamespace(tool_calls=[tool_call], content=None)
+        return SimpleNamespace(choices=[SimpleNamespace(message=message)])
 
     return _make
 
 
 @pytest.fixture
 def text_response():
-    """A fake Message with no tool_use block — the 'model refused the tool
+    """A fake ChatCompletion with no tool_calls — the 'model refused the tool
     call' case analyse.py has to retry past."""
     from types import SimpleNamespace
 
     def _make(text: str = "I'd rather not.") -> SimpleNamespace:
-        block = SimpleNamespace(type="text", text=text)
-        return SimpleNamespace(content=[block])
+        message = SimpleNamespace(tool_calls=None, content=text)
+        return SimpleNamespace(choices=[SimpleNamespace(message=message)])
 
     return _make
 

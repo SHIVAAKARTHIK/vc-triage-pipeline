@@ -55,14 +55,14 @@ def analyse(
     out_dir: Path = typer.Option(
         analyse_stage.DEFAULT_ANALYSES_DIR, help="Where to write analyses."
     ),
-    model: str = typer.Option(analyse_stage.DEFAULT_MODEL, help="Anthropic model id."),
+    model: str = typer.Option(analyse_stage.DEFAULT_MODEL, help="OpenAI model id."),
     max_attempts: int = typer.Option(
         3, min=1, max=5, help="Retries per candidate on invalid model output."
     ),
 ) -> None:
     """Analyse stage: score each candidate against docs/thesis.md via an LLM call.
 
-    Reads ANTHROPIC_API_KEY from the environment.
+    Reads OPENAI_API_KEY from the environment.
     """
     analyses = analyse_stage.run(
         candidates_path=candidates, out_dir=out_dir, model=model, max_attempts=max_attempts

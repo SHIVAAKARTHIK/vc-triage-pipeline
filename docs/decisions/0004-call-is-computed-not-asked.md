@@ -64,5 +64,5 @@ missed by accident — it's a scope call, not an oversight.
   the scores come from the same reasoning pass — but a rationale that reads
   as "mostly positive" next to a computed "Watch" is a real, known possibility,
   not fully engineered away. Worth a spot-check when reading real output.
-- `DEFAULT_MODEL = "claude-sonnet-5"` — chosen for cost/quality balance on a
-  scoring task at this candidate volume; overridable per-run via `--model`.
+- `DEFAULT_MODEL` is overridable per-run via `--model`; see ADR 0005 for which
+  provider it targets and why that changed mid-build.

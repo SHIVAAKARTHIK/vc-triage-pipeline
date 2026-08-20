@@ -60,10 +60,10 @@ def test_analyse_command_invokes_the_analyse_stage(monkeypatch, tmp_path) -> Non
     out_dir = tmp_path / "analyses"
     result = runner.invoke(
         app,
-        ["analyse", "--model", "claude-opus-5", "--max-attempts", "2", "--out-dir", str(out_dir)],
+        ["analyse", "--model", "gpt-4o", "--max-attempts", "2", "--out-dir", str(out_dir)],
     )
 
     assert result.exit_code == 0
-    assert calls["args"][2] == "claude-opus-5"
+    assert calls["args"][2] == "gpt-4o"
     assert calls["args"][3] == 2
     assert "wrote 0 analyses" in result.stdout

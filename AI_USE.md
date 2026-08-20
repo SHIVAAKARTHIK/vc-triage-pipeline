@@ -8,9 +8,11 @@ repo grows rather than assembled at the end.
 
 - **Claude Code (Opus 5)** — used as a pair-programmer throughout: planning, scaffolding,
   writing modules and tests, and reviewing my own changes.
-- **Claude (API)** — the analysis stage of the pipeline itself calls the Anthropic API.
-  That's product, not process; see `prompts/` for the prompts and `docs/` for why they
-  look the way they do.
+- **OpenAI API** — the analysis stage of the pipeline itself calls OpenAI's chat
+  completions/function-calling API (originally built against Anthropic's API — switched
+  mid-build, see ADR 0005, because that's the key that was actually available to run it
+  against). That's product, not process; see `prompts/` for the prompts and `docs/` for
+  why they look the way they do.
 
 ## Per-module accounting
 
@@ -27,7 +29,7 @@ everything in this repo was read and revised by me before commit.
 | `tests/test_schemas.py`, `test_evidence.py`, `test_util.py`, `conftest.py` | Claude Code | Test cases target the specific guarantees schemas.py claims to make (see each test module's docstring); reviewed for whether they'd actually catch a regression, not just pass. |
 | `src/triage/cache.py`, `source.py`, `sources/yc.py`, `sources/hn.py` | Claude Code, tuned jointly against the live APIs | Founder-page parsing, the keyword filter, and the HTML body cap all came from actually running against the real YC/HN APIs during the build, not from spec alone — see docs/decisions/0003. |
 | `tests/test_cache.py`, `test_source_yc.py`, `test_source_hn.py`, `test_source_pipeline.py`, `test_source_live.py` | Claude Code | The relevance-filter test runs against a trimmed but real slice of the Winter 2025 batch, not synthetic data, specifically to catch filter false positives (it did — see ADR 0003). |
-| `src/triage/thesis.py`, `analyse.py`, `prompts/analyse_*.md` | Claude Code, design co-decided | The two ADR-0004 calls — call computed from the score rather than asked for, prompt generated live from `docs/thesis.md` rather than duplicated — were discussed and agreed before writing, mirroring the schemas.py pattern from ADR 0002. **Not yet exercised against the real API**: no `ANTHROPIC_API_KEY` was available in the build environment. `tests/test_analyse_live.py` skips cleanly without one; it needs to actually be run once a key is set, before trusting this stage. |
+| `src/triage/thesis.py`, `analyse.py`, `prompts/analyse_*.md` | Claude Code, design co-decided | The two ADR-0004 calls — call computed from the score rather than asked for, prompt generated live from `docs/thesis.md` rather than duplicated — were discussed and agreed before writing, mirroring the schemas.py pattern from ADR 0002. Originally built against Anthropic's tool-use API; reworked mid-build to OpenAI's function-calling shape once that was the key actually available — see ADR 0005. |
 | `tests/test_thesis.py`, `test_thesis_sync.py`, `test_analyse_prompts.py`, `test_analyse.py`, `test_analyse_pipeline.py`, `test_analyse_live.py` | Claude Code | The retry-loop tests (`test_analyse.py`) are the ones I'd defend hardest: each targets one specific way a model response can be wrong (malformed, wrong dimension names, dangling evidence, no tool call at all) and asserts the *correction text* sent back on retry actually names the problem, not just that a retry happened. |
 | _(rows added per phase)_ | | |
 

@@ -61,7 +61,9 @@ class TestRetryOnDimensionNameMismatch:
 
         assert len(sender.calls) == 2
         assert analysis is not None
-        second_call_content = sender.calls[1]["messages"][0]["content"]
+        # messages[0] is the (unchanged) system prompt; messages[1] is the user
+        # turn, which is where the corrective note gets appended.
+        second_call_content = sender.calls[1]["messages"][1]["content"]
         assert "team_domain_fit" in second_call_content
         assert "must use exactly" in second_call_content
 
@@ -81,7 +83,9 @@ class TestRetryOnDanglingEvidence:
 
         assert len(sender.calls) == 2
         assert analysis.candidate_slug == candidate.slug
-        second_call_content = sender.calls[1]["messages"][0]["content"]
+        # messages[0] is the (unchanged) system prompt; messages[1] is the user
+        # turn, which is where the corrective note gets appended.
+        second_call_content = sender.calls[1]["messages"][1]["content"]
         assert fabricated_id in second_call_content
 
 
@@ -95,6 +99,30 @@ class TestRetryOnMalformedResponse:
         del bad["market"]
         good = valid_raw_input(ev.id)
         sender = scripted_sender([tool_response(bad), tool_response(good)])
+
+        analysis = analyse_candidate(sender, candidate, max_attempts=3)
+        assert len(sender.calls) == 2
+        assert analysis is not None
+
+    def test_retries_when_tool_call_arguments_are_not_valid_json(
+        self, make_candidate, make_evidence, scripted_sender, tool_response, valid_raw_input
+    ) -> None:
+        """A real OpenAI-specific failure mode: arguments come back as a string,
+        and a truncated/malformed one is as retry-able as a schema mismatch."""
+        from types import SimpleNamespace
+
+        from triage.analyse import TOOL_NAME
+
+        ev = make_evidence(url="https://example.com/a")
+        candidate = make_candidate(evidence=[ev])
+
+        broken_function = SimpleNamespace(name=TOOL_NAME, arguments="{not valid json")
+        broken_tool_call = SimpleNamespace(function=broken_function)
+        broken_message = SimpleNamespace(tool_calls=[broken_tool_call], content=None)
+        broken_response = SimpleNamespace(choices=[SimpleNamespace(message=broken_message)])
+
+        good = tool_response(valid_raw_input(ev.id))
+        sender = scripted_sender([broken_response, good])
 
         analysis = analyse_candidate(sender, candidate, max_attempts=3)
         assert len(sender.calls) == 2
