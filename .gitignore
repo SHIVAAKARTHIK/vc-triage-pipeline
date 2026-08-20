@@ -20,3 +20,7 @@ htmlcov/
 # NOTE: data/ and out/ are deliberately NOT ignored. Reviewers must be able to
 # read the pipeline's outputs without re-running it, and the cached raw
 # responses in data/raw/ make every run replayable offline.
+
+# Throwaway scratch folder used to record the walkthrough video's single-
+# company live demo -- never meant to be committed.
+demo/

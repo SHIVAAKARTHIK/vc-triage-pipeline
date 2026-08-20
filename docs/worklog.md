@@ -1,5 +1,20 @@
 # Worklog
 
+> **Written by Karthik.** This is the honest running account of how this got built —
+> what I tried, what the AI got wrong, what I threw away. It is not a changelog (git
+> already does that).
+>
+> **Rules I'm holding myself to:**
+> - Record the rejections, not just the accepted output. The rejections are the signal.
+> - My own words. If a paragraph here reads like a model wrote it, it fails its purpose.
+>
+> **Honest note on timing:** most of these entries were reconstructed on 2026-08-21, in
+> conversation with Claude Code, from memory and the session history — not written in
+> real time as each decision happened. That's a real deviation from "never backfill,"
+> made under deadline pressure. The dates below are when each decision actually
+> happened, not when I wrote it down. I'd rather say that plainly than pretend this was
+> kept live the whole way through.
+
 ---
 
 ## 2026-08-17 — Kickoff and scoping
