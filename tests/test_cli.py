@@ -67,3 +67,41 @@ def test_analyse_command_invokes_the_analyse_stage(monkeypatch, tmp_path) -> Non
     assert calls["args"][2] == "gpt-4o"
     assert calls["args"][3] == 2
     assert "wrote 0 analyses" in result.stdout
+
+
+def test_memo_command_invokes_the_memo_stage(monkeypatch, tmp_path) -> None:
+    """CLI wiring only: does `triage memo` call memo_stage.run with the flags
+    it was given? The stage's own behaviour is covered in test_memo_pipeline.py."""
+    calls = {}
+
+    def fake_run(candidates_path, analyses_dir, out_dir):
+        calls["args"] = (candidates_path, analyses_dir, out_dir)
+        return []
+
+    monkeypatch.setattr("triage.cli.memo_stage.run", fake_run)
+
+    out_dir = tmp_path / "memos"
+    result = runner.invoke(app, ["memo", "--out-dir", str(out_dir)])
+
+    assert result.exit_code == 0
+    assert calls["args"][2] == out_dir
+    assert "wrote 0 memos" in result.stdout
+
+
+def test_run_command_invokes_the_pipeline(monkeypatch) -> None:
+    """CLI wiring only: does `triage run` call pipeline_stage.run with the
+    flags it was given? The chaining itself is covered in test_pipeline.py."""
+    calls = {}
+
+    def fake_run(batch, limit, model, max_attempts):
+        calls["args"] = (batch, limit, model, max_attempts)
+        return []
+
+    monkeypatch.setattr("triage.cli.pipeline_stage.run", fake_run)
+
+    result = runner.invoke(app, ["run", "--batch", "Fall 2025", "--limit", "10"])
+
+    assert result.exit_code == 0
+    assert calls["args"][0] == "Fall 2025"
+    assert calls["args"][1] == 10
+    assert "wrote 0 memos" in result.stdout
