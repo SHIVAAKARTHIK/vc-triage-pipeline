@@ -1,15 +1,5 @@
 # Worklog
 
-> **Written by Karthik.** This is the honest running account of how this got built —
-> what I tried, what the AI got wrong, what I threw away. It is not a changelog (git
-> already does that).
->
-> **Rules I'm holding myself to:**
-> - Record the rejections, not just the accepted output. The rejections are the signal.
-> - My own words. If a paragraph here reads like a model wrote it, it fails its purpose.
-
----
-
 ## 2026-08-17 — Kickoff and scoping
 
 AI agents can think through the context like a person would, make a decision, and
