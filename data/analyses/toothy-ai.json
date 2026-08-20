@@ -1,0 +1,79 @@
+{
+  "candidate_slug": "toothy-ai",
+  "thesis_version": "thesis@3cee761c34",
+  "model_used": "gpt-4o-mini",
+  "analyzed_at": "2026-08-20T18:33:24.952139Z",
+  "team": {
+    "text": "The team is composed of experienced founders. Johnny Chen is a second-time founder with a background in full stack engineering and operations management. He has successfully built a B2B product to $1 million in ARR, demonstrating his capability to execute. Matt Kerrigan, also a second-time technical founder, has experience in machine learning and automation, contributing relevant expertise. Tejas Konduru's role in a large healthcare AI company adds further credibility, although his specific contributions to Toothy are not detailed. The team's mix of operational and technical experience aligns well with the needs of automating insurance verification workflows, though clearer evidence of their collective healthcare domain experience would strengthen their profile.",
+    "evidence_ids": [
+      "ev_18b717e6"
+    ]
+  },
+  "product": {
+    "text": "Toothy AI's product is focused on automating insurance verification and billing tasks for dental clinics. According to a statement from the company, their AI agents handle the entire workflow, which includes making insurance calls and automating verification and billing processes. This qualifies as a fully executable workflow with no human intervention required, addressing a specific pain point in dental practices that currently spend significant time and resources on these tasks.",
+    "evidence_ids": [
+      "ev_18b717e6",
+      "ev_a3e05c0f"
+    ]
+  },
+  "market": {
+    "text": "The target market comprises dental clinics, which frequently face inefficiency in managing insurance tasks, typically spending over 160 hours a month on these operations. This creates a clearly defined and quantifiable pain point for buyers, as they currently incur labor costs for manual insurance verification. Therefore, the market is well-defined, and Toothy's proposition aligns with existing budgeting for these services.",
+    "evidence_ids": [
+      "ev_18b717e6"
+    ]
+  },
+  "risks": [
+    {
+      "text": "There is currently no evidence of traction beyond admission to Y Combinator's Winter 2025 batch. This raises concerns about their ability to convert this initial interest into actual paying customers or measurable product use.",
+      "evidence_ids": [
+        "ev_18b717e6"
+      ]
+    },
+    {
+      "text": "While the team's background is strong, there is a lack of specific experience directly within the dental industry itself. Their previous ventures are not focused on dental practices, which could hinder their understanding of deep domain-specific challenges in this niche market.",
+      "evidence_ids": [
+        "ev_18b717e6"
+      ]
+    }
+  ],
+  "dimension_scores": [
+    {
+      "name": "workflow_ownership",
+      "weight": 30.0,
+      "score": 10,
+      "rationale": "Toothy AI's product fully automates the insurance verification and billing workflow, handling all aspects without requiring human intervention, including voice AI for making insurance calls."
+    },
+    {
+      "name": "buyer_pain",
+      "weight": 20.0,
+      "score": 10,
+      "rationale": "Dental clinics currently spend over 160 hours a month on insurance-related tasks, providing a quantifiable pain point that Toothy AI directly addresses."
+    },
+    {
+      "name": "team_domain_fit",
+      "weight": 25.0,
+      "score": 7,
+      "rationale": "The founders have relevant startup and technical experience, but lack explicit prior experience in the dental industry, which may limit their market insights."
+    },
+    {
+      "name": "wedge_defensibility",
+      "weight": 15.0,
+      "score": 8,
+      "rationale": "The automation of insurance verification workflows can lead to accumulating unique operational data and integrations that enhance their service over time."
+    },
+    {
+      "name": "traction",
+      "weight": 10.0,
+      "score": 2,
+      "rationale": "Admission to Y Combinator indicates potential but does not constitute real traction or paying customers, making it difficult to assess actual market demand."
+    }
+  ],
+  "call": "meet",
+  "call_rationale": "Toothy AI has a promising product that fully automates a specific back-office workflow for dental clinics, addressing a significant pain point in the industry. The strong team background in technology and operations supports the execution of this vision, but the lack of traction and specific dental industry experience raises concerns. Overall, the startup presents an interesting opportunity within the thesis, meriting further investigation as they progress beyond the accelerator phase.",
+  "change_my_mind": [
+    "Provide evidence of paying customers or pilot programs validating market demand.",
+    "Demonstrate strong domain experience within the dental industry to reinforce credibility.",
+    "Show measurable outcomes or metrics from initial product use or feedback during their Y Combinator program."
+  ],
+  "total_score": 82
+}

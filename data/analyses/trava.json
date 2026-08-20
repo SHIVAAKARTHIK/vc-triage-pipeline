@@ -1,0 +1,79 @@
+{
+  "candidate_slug": "trava",
+  "thesis_version": "thesis@3cee761c34",
+  "model_used": "gpt-4o-mini",
+  "analyzed_at": "2026-08-20T18:34:14.947103Z",
+  "team": {
+    "text": "Pushkar Lanka, the founder and CEO, has relevant experience as an Engineering Manager at Plaid, which suggests skill in building tech products. However, he lacks deep domain experience specifically in global trade compliance, which may hinder understanding of the nuances in the compliance landscape.",
+    "evidence_ids": [
+      "ev_23122399"
+    ]
+  },
+  "product": {
+    "text": "Trava's AI agents are focused on automating the global trade compliance workflow. They audit customs entries and automate classification, which fits the requirement of executing one specific outsourced back-office task. This suggests that the agents perform tasks that traditionally require human oversight, thereby replacing existing manual processes.",
+    "evidence_ids": [
+      "ev_23122399",
+      "ev_9e33975d"
+    ]
+  },
+  "market": {
+    "text": "The market for global trade compliance is significant, as importers currently face high costs due to errors and overpayments. The evidence indicates that these compliance tasks are costly and time-consuming, providing a clear financial incentive for importers to adopt a solution like Trava's.",
+    "evidence_ids": [
+      "ev_23122399"
+    ]
+  },
+  "risks": [
+    {
+      "text": "The startup is at a very early stage with only YC batch admission and no evidence of working product or customer traction yet. This lacks real usage or trial data to support their claims.",
+      "evidence_ids": [
+        "ev_23122399"
+      ]
+    },
+    {
+      "text": "There is a possibility that regulatory changes could impact the compliance landscape significantly, which may affect the demand for compliance solutions like Trava.",
+      "evidence_ids": [
+        "ev_23122399"
+      ]
+    }
+  ],
+  "dimension_scores": [
+    {
+      "name": "workflow_ownership",
+      "weight": 30.0,
+      "score": 8,
+      "rationale": "Trava's agents automate the specific workflow of auditing customs entries and classifying imports, which represents an end-to-end execution of a trade compliance task."
+    },
+    {
+      "name": "buyer_pain",
+      "weight": 20.0,
+      "score": 9,
+      "rationale": "Importers face significant financial losses due to errors in duty payments and compliance risks which are currently managed manually, indicating a strong buyer pain point."
+    },
+    {
+      "name": "team_domain_fit",
+      "weight": 25.0,
+      "score": 5,
+      "rationale": "The founder has technical skills but lacks visible domain expertise in trade compliance, which could affect the startup's ability to effectively address market needs."
+    },
+    {
+      "name": "wedge_defensibility",
+      "weight": 15.0,
+      "score": 6,
+      "rationale": "Trava's agents may gather useful data over time related to trade compliance practices, providing some defensibility, yet this is not clearly established in the early stage."
+    },
+    {
+      "name": "traction",
+      "weight": 10.0,
+      "score": 3,
+      "rationale": "As the company is in the early YC batch phase, there is no substantial evidence of traction or product validation beyond admission into the accelerator."
+    }
+  ],
+  "call": "watch",
+  "call_rationale": "Trava has potential due to the specific automation of a critical compliance workflow which is a pain point for many importers. However, significant concerns remain related to the founder's domain knowledge and the current lack of traction.",
+  "change_my_mind": [
+    "Demonstrate early customer pilots using the AI compliance platform showing measurable results.",
+    "Provide evidence of domain expertise being developed within the team through hiring or partnerships.",
+    "Show initial data indicating a market size and adoption rates for the platform beyond typical assumptions."
+  ],
+  "total_score": 66
+}

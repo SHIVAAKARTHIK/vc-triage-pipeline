@@ -1,0 +1,78 @@
+{
+  "candidate_slug": "promptless",
+  "thesis_version": "thesis@3cee761c34",
+  "model_used": "gpt-4o-mini",
+  "analyzed_at": "2026-08-20T18:35:07.584009Z",
+  "team": {
+    "text": "The founding team has relevant experience in tech and engineering but lacks specific expertise in the targeted back-office workflow of managing documentation for SMBs. Prithvi Ramakrishnan has experience in product and engineering roles at a fintech startup, and Frances Liu has a background in ML/AI engineering. However, neither founder has demonstrated direct operating experience in the document management process for small or mid-sized businesses, which is crucial for success in this niche.",
+    "evidence_ids": [
+      "ev_42b945da"
+    ]
+  },
+  "product": {
+    "text": "Promptless aims to automate the process of keeping customer-facing documentation up to date, which is a specific back-office workflow. However, the execution is not clearly defined as fully automated. The evidence suggests that it integrates with multiple doc platforms and triggers updates based on various factors, but there is no clear indication that it executes document updates without any human intervention, making it insufficiently aligned with the thesis.",
+    "evidence_ids": [
+      "ev_42b945da"
+    ]
+  },
+  "market": {
+    "text": "The market for better customer-facing documentation is substantial, as poor documentation can lead to customer churn. However, it's not clear if the current paying customers (startups and Fortune 500) are primarily SMBs or lower-mid-market businesses, which is required for the investment thesis. Promptless may appeal to larger companies as well, which would conflict with the targeted market segment.",
+    "evidence_ids": [
+      "ev_42b945da"
+    ]
+  },
+  "risks": [
+    {
+      "text": "No evidence of a precise execution capability where the agent can autonomously update documents without human oversight. The product's automation level is uncertain, and its definition of completing the workflow is vague.",
+      "evidence_ids": [
+        "ev_42b945da"
+      ]
+    },
+    {
+      "text": "There is no concrete evidence of traction indicating actual usage by paying customers within the SMB segment, which raises doubts about the product-market fit in the intended target market.",
+      "evidence_ids": [
+        "ev_766da63a"
+      ]
+    }
+  ],
+  "dimension_scores": [
+    {
+      "name": "workflow_ownership",
+      "weight": 30.0,
+      "score": 3,
+      "rationale": "The description implies automation but lacks clarity on whether this occurs end-to-end without human intervention."
+    },
+    {
+      "name": "buyer_pain",
+      "weight": 20.0,
+      "score": 5,
+      "rationale": "While managing documentation is a recognized challenge, it remains unclear if Promptless targets SMBs specifically and what their current costs are."
+    },
+    {
+      "name": "team_domain_fit",
+      "weight": 25.0,
+      "score": 4,
+      "rationale": "Founders have tech backgrounds but lack specific experience in the document management workflow for SMBs."
+    },
+    {
+      "name": "wedge_defensibility",
+      "weight": 15.0,
+      "score": 6,
+      "rationale": "The ability to integrate with various doc platforms could create defensibility, but it is not clear how much proprietary intelligence will be developed."
+    },
+    {
+      "name": "traction",
+      "weight": 10.0,
+      "score": 2,
+      "rationale": "The only signal of traction is a HN post with minimal engagement, indicating a lack of meaningful market validation."
+    }
+  ],
+  "call": "watch",
+  "call_rationale": "While Promptless addresses a relevant workflow in keeping customer documentation updated, it does not clearly meet the criteria of fully automating this process without human input. The founders have technical expertise but lack direct domain experience in the SMB segment, and the current traction is minimal, raising questions about market fit and execution capability.",
+  "change_my_mind": [
+    "If they can demonstrate that their agent executes document updates completely autonomously without human intervention.",
+    "If they can provide specific metrics showing customer acquisition and retention among SMBs.",
+    "If they can offer case studies or testimonials from current users illustrating clear ROI from the automation features."
+  ],
+  "total_score": 40
+}

@@ -1,0 +1,79 @@
+{
+  "candidate_slug": "salespatriot",
+  "thesis_version": "thesis@3cee761c34",
+  "model_used": "gpt-4o-mini",
+  "analyzed_at": "2026-08-20T18:34:06.716586Z",
+  "team": {
+    "text": "The founding team consists of three individuals with notable backgrounds. Nelson Ray has experience in helping manufacturers win DoD RFQ solicitations and has skills in full-stack development and sales. Ben Rhodes-Kropf, the CTO, has a strong technical background, specifically in AI and machine learning, evidenced by his work on LLMs and synthetic data research at MIT and DARPA. Maciej Szymczyk has an impressive academic background in Electrical Engineering, Computer Science, and business, along with ML research experience. Overall, the team's diverse skills align well with the demands of building AI workflows for supply chain management in the defense sector.",
+    "evidence_ids": [
+      "ev_4adf727a",
+      "ev_3966abb8"
+    ]
+  },
+  "product": {
+    "text": "SalesPatriot claims to create custom AI workflows for sales and supply chain teams to manage procurement, requests for quotes, and purchase orders. However, this does not demonstrate that the AI agent fully executes any one back-office workflow autonomously, as required by the thesis. Instead, it implies a supportive tool rather than a complete replacement of a current outsourced worker or vendor. The description suggests an improvement of existing processes, but not through the end-to-end execution of specific tasks without human intervention, which is necessary per the thesis.",
+    "evidence_ids": [
+      "ev_4adf727a"
+    ]
+  },
+  "market": {
+    "text": "SalesPatriot targets distributors and OEMs, markets that generally have existing workflow-related costs associated with procurement and supply chain management. However, there is insufficient evidence to confirm that these businesses are currently spending on the specific workflows SalesPatriot claims to address. While the general sector (supply chain and procurement in defense) shows potential pain points, quantifiable cost evidence directly linking to SalesPatriot's claims is not provided among the available resources.",
+    "evidence_ids": [
+      "ev_4adf727a"
+    ]
+  },
+  "risks": [
+    {
+      "text": "There is no clear indication in the evidence about a specific named workflow that the AI agent fully executes end-to-end. As it stands, SalesPatriot appears to enhance existing processes rather than replacing a human role entirely, presenting a risk that the product doesn't meet the thesis’s requirements.",
+      "evidence_ids": [
+        "ev_4adf727a"
+      ]
+    },
+    {
+      "text": "No evidence indicates current user traction or pilot programs that demonstrate the effectiveness of the product or workflow execution, leading to questions about actual demand and acceptance in the market.",
+      "evidence_ids": [
+        "ev_4adf727a"
+      ]
+    }
+  ],
+  "dimension_scores": [
+    {
+      "name": "workflow_ownership",
+      "weight": 30.0,
+      "score": 3,
+      "rationale": "SalesPatriot's product aims to create custom AI workflows for supply chain and procurement but does not guarantee full end-to-end execution of a single named back-office workflow without human oversight."
+    },
+    {
+      "name": "buyer_pain",
+      "weight": 20.0,
+      "score": 4,
+      "rationale": "While the market has pain points regarding supply chain efficiency, no specific evidence details quantifiable costs or existing budget lines associated with the workflows SalesPatriot targets."
+    },
+    {
+      "name": "team_domain_fit",
+      "weight": 25.0,
+      "score": 8,
+      "rationale": "The founding team possesses strong technical and domain-specific expertise relevant to building AI solutions for the defense supply chain."
+    },
+    {
+      "name": "wedge_defensibility",
+      "weight": 15.0,
+      "score": 6,
+      "rationale": "The potential accumulation of domain-specific data is a benefit, but it's unclear how well the AI's capabilities translate into a defensible market position."
+    },
+    {
+      "name": "traction",
+      "weight": 10.0,
+      "score": 1,
+      "rationale": "Currently at the YC batch stage with no demonstrated real usage or pilot outcomes, indicating minimal traction."
+    }
+  ],
+  "call": "watch",
+  "call_rationale": "The team has impressive technical backgrounds, which is a strong positive. However, the product lacks clarity around workflow execution and does not appear to have traction or sufficient evidence of buyer pain points that meet the thesis requirements. Therefore, while the team is promising, the product may not currently be aligned with the investment thesis.",
+  "change_my_mind": [
+    "If SalesPatriot can provide a specific example of a workflow that the AI executes end-to-end, fulfilling the thesis requirements.",
+    "If they demonstrate concrete, quantifiable user acquisition or pilot traction in their target market.",
+    "If any notable partnerships or contracts with distributors or OEMs are established, indicating clear buyer pain points and financial backing."
+  ],
+  "total_score": 47
+}

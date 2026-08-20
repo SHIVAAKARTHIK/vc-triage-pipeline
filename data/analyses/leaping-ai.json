@@ -1,0 +1,84 @@
+{
+  "candidate_slug": "leaping-ai",
+  "thesis_version": "thesis@3cee761c34",
+  "model_used": "gpt-4o-mini",
+  "analyzed_at": "2026-08-20T18:33:05.584136Z",
+  "team": {
+    "text": "Kevin Wu has a background in computer science and experience as a consultant at BCG, which offers solid business and technical foundations. Arkadiy Telegin's experience in autonomous robotics is relevant for AI application development. However, neither have explicit experience in the specific workflows of SMBs for which they claim to build solutions, such as customer service automation in the home remodeling or roofing sectors.",
+    "evidence_ids": [
+      "ev_ded881b4"
+    ]
+  },
+  "product": {
+    "text": "Leaping AI automates end-to-end customer service, lead qualification, and appointment scheduling through AI voice and texting agents targeted at mid-market and enterprise companies. They claim to completely handle these workflows, replacing human agents in contact centers, which aligns with the thesis of fully executing a specific, outsourced back-office workflow.",
+    "evidence_ids": [
+      "ev_ded881b4"
+    ]
+  },
+  "market": {
+    "text": "Leaping AI is targeting mid-market and enterprise companies across several industries like home remodeling and health insurance, all of which include businesses that currently rely on human agents for customer service. However, while they focus on larger companies, the thesis specifically restricts to SMBs (5–500 employees), raising questions about the applicability of their solution in the intended target market.",
+    "evidence_ids": [
+      "ev_ded881b4"
+    ]
+  },
+  "risks": [
+    {
+      "text": "There is no evidence presented of existing customers or measurable traction beyond their YC admission. The claims about their product's efficacy need validation in real market conditions.",
+      "evidence_ids": [
+        "ev_c26af8bd"
+      ]
+    },
+    {
+      "text": "The alignment with the specific need of SMBs (5-500 employees) is unclear, as they seem to focus more on mid-market and enterprise clients, which may not fit the investment criteria outlined in the thesis.",
+      "evidence_ids": [
+        "ev_ded881b4"
+      ]
+    },
+    {
+      "text": "While they claim to automate workflows end-to-end, specific metrics on performance, customer satisfaction, or cost savings are absent, raising doubts about actual operational effectiveness in the field.",
+      "evidence_ids": [
+        "ev_ded881b4"
+      ]
+    }
+  ],
+  "dimension_scores": [
+    {
+      "name": "workflow_ownership",
+      "weight": 30.0,
+      "score": 10,
+      "rationale": "Leaping AI automates the end-to-end process of customer service and appointment scheduling, executing these workflows without human intervention, which is fully aligned with the thesis."
+    },
+    {
+      "name": "buyer_pain",
+      "weight": 20.0,
+      "score": 8,
+      "rationale": "Their target market consists of mid-market and enterprise companies that currently incur costs for human agents in customer service roles, indicating a recognizable pain point."
+    },
+    {
+      "name": "team_domain_fit",
+      "weight": 25.0,
+      "score": 6,
+      "rationale": "The founders have relevant backgrounds in technology and robotics. However, the lack of direct experience in the specific workflows they target casts some doubt on their domain fit."
+    },
+    {
+      "name": "wedge_defensibility",
+      "weight": 15.0,
+      "score": 7,
+      "rationale": "Leaping AI has the potential to accumulate specific data and insights from customer interactions, which could enhance their offering over time, although it is unclear how defensible this will be in a competitive market."
+    },
+    {
+      "name": "traction",
+      "weight": 10.0,
+      "score": 0,
+      "rationale": "Currently, there is no evidence of paying customers or traction beyond being admitted to YC, indicating a lack of real usage or market validation."
+    }
+  ],
+  "call": "meet",
+  "call_rationale": "Leaping AI shows strong potential in executing specific workflows end-to-end, but its focus on mid-market and enterprise ranges introduces questions regarding adherence to the investment thesis that targets SMBs specifically. Additionally, the evidence of traction is lacking, which raises risk factors that need to be addressed before considering further investment.",
+  "change_my_mind": [
+    "Demonstrate verified traction through early customer contracts or pilots in the SMB sector.",
+    "Present metrics that detail operational effectiveness and customer satisfaction from the existing deployments.",
+    "Showcase specific case studies that confirm a strong ROI for customers using their AI agents."
+  ],
+  "total_score": 72
+}

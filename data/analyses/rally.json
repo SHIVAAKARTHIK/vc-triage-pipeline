@@ -1,0 +1,79 @@
+{
+  "candidate_slug": "rally",
+  "thesis_version": "thesis@3cee761c34",
+  "model_used": "gpt-4o-mini",
+  "analyzed_at": "2026-08-20T18:33:55.236462Z",
+  "team": {
+    "text": "Nick Telecki, the CEO, has a strong background in scaling a delivery startup and experience in global strategy at Delivery Hero, which provides relevant domain experience in logistics. Thiago Peres, the CTO, has extensive experience in tech product management at esteemed companies like Stripe and Meta. However, despite their solid backgrounds, there isn't direct evidence showing a deep understanding of the specific financial workflows and operational intricacies of the fleet management industry.",
+    "evidence_ids": [
+      "ev_c7a64134"
+    ]
+  },
+  "product": {
+    "text": "Rally aims to be a financial platform focusing on fleet management by streamlining payments and automating workflows related to bookkeeping, credit, and driver payroll. However, it does not clearly state that it fully executes these workflows autonomously or without human intervention. The emphasis seems to be on managing expenses rather than replacing specific outsourced workflow tasks in the traditional sense of back-office work.",
+    "evidence_ids": [
+      "ev_c7a64134",
+      "ev_49ebc6c9"
+    ]
+  },
+  "market": {
+    "text": "Rally is targeting a substantial market in Europe where over €1 trillion is spent annually on various fleet-related expenses. This signifies a significant buyer pain as businesses currently rely on legacy systems for processing these payments. However, it is not explicitly stated how these businesses budget for these services nor what specific line items they allocate for this kind of expense management, which complicates understanding the current buyer pain.",
+    "evidence_ids": [
+      "ev_c7a64134"
+    ]
+  },
+  "risks": [
+    {
+      "text": "The product does not clearly indicate it fully executes a named back-office financial workflow autonomously, possibly falling into assisted processes rather than total replacement. This raises concerns about differentiation in a crowded market.",
+      "evidence_ids": [
+        "ev_c7a64134"
+      ]
+    },
+    {
+      "text": "There is uncertainty regarding the specific financial workflow Rally targets for automation and whether it truly replaces outsourced labor in a measurable way, which is central to the investment thesis.",
+      "evidence_ids": [
+        "ev_c7a64134"
+      ]
+    }
+  ],
+  "dimension_scores": [
+    {
+      "name": "workflow_ownership",
+      "weight": 30.0,
+      "score": 5,
+      "rationale": "Rally seeks to automate bookkeeping and payroll processes for fleet businesses, but lacks clarity on fully executing these transactions independently without human steps."
+    },
+    {
+      "name": "buyer_pain",
+      "weight": 20.0,
+      "score": 6,
+      "rationale": "The market for fleet expenses is large, indicating some level of pain, but there's insufficient evidence showing how much companies currently spend on outsourced services for these tasks."
+    },
+    {
+      "name": "team_domain_fit",
+      "weight": 25.0,
+      "score": 7,
+      "rationale": "Founders have solid backgrounds in related industries, yet there is limited direct experience in the specific financial workflow used by fleet management companies."
+    },
+    {
+      "name": "wedge_defensibility",
+      "weight": 15.0,
+      "score": 5,
+      "rationale": "While the service may gather valuable data over time, the core proposition does not clearly indicate how it will build unique defensibility against competitors."
+    },
+    {
+      "name": "traction",
+      "weight": 10.0,
+      "score": 4,
+      "rationale": "Currently, Rally is still in the early stages, having only been accepted into the YC batch, lacking clear user engagement or early pilot programs."
+    }
+  ],
+  "call": "watch",
+  "call_rationale": "Rally has a competent team and a significant target market, but the lack of clarity on fully executing its claimed workflows and insufficient demonstration of buyer pain and traction raises concerns.",
+  "change_my_mind": [
+    "If Rally can demonstrate a specific case study or pilot where their platform has replaced a traditional outsourced workflow in fleet finance.",
+    "If they can provide evidence of clear cost savings for fleet operations directly tied to their platform's implementation.",
+    "If the founders reveal direct connections to existing customers willing to speak on the record about their need for rally's solution."
+  ],
+  "total_score": 56
+}

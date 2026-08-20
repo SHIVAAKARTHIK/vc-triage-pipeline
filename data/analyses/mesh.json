@@ -1,0 +1,80 @@
+{
+  "candidate_slug": "mesh",
+  "thesis_version": "thesis@3cee761c34",
+  "model_used": "gpt-4o-mini",
+  "analyzed_at": "2026-08-20T18:34:58.626968Z",
+  "team": {
+    "text": "Erin Kim and Nandini Ramakrishnan have strong backgrounds that align with the goals of Mesh. Erin has experience scaling Carta's fund accounting business and has operating experience in finance teams, while Nandini has a technical background in building accounting automation workflows as well as prior experience developing machine learning solutions. Their combined experience suggests an ability to design and execute an efficient automation tool for accruals.",
+    "evidence_ids": [
+      "ev_ee8e9955",
+      "ev_8ed6fb37"
+    ]
+  },
+  "product": {
+    "text": "Mesh addresses the workflow of accrual accounting, aiming to eliminate manual spreadsheet inputs and reduce time spent on month-end closes. By automating 90% of the accruals process through real-time data collection, Mesh offers a defined workflow for execution, which aligns with the investment thesis of fully executing a specific back-office task.",
+    "evidence_ids": [
+      "ev_ee8e9955",
+      "ev_8ed6fb37"
+    ]
+  },
+  "market": {
+    "text": "The target market includes mid-to-large finance teams that currently struggle with manual accrual processes, consuming valuable time each month. This market has existing budget lines for accounting functions and is likely seeking efficiencies, making this a quantifiable buyer pain.",
+    "evidence_ids": [
+      "ev_ee8e9955"
+    ]
+  },
+  "risks": [
+    {
+      "text": "The current evidence does not provide any validated traction metrics or signals of user engagement or pilot programs with prospective customers, resulting in uncertainty regarding actual market demand.",
+      "evidence_ids": [
+        "ev_ee8e9955"
+      ]
+    },
+    {
+      "text": "There is no indication of customer feedback or validation from beyond the YC acceptance stage, leaving the viability of the solution in question without real-world application data.",
+      "evidence_ids": [
+        "ev_ee8e9955"
+      ]
+    }
+  ],
+  "dimension_scores": [
+    {
+      "name": "workflow_ownership",
+      "weight": 30.0,
+      "score": 10,
+      "rationale": "Mesh automates the accrual process end-to-end, replacing spreadsheet tasks with auditable scripts and real-time data collection, fulfilling the definition of workflow execution."
+    },
+    {
+      "name": "buyer_pain",
+      "weight": 20.0,
+      "score": 10,
+      "rationale": "Many mid-size finance teams face significant delays due to manual accrual processes, and this is a defined and quantifiable pain point reflected in existing operational costs."
+    },
+    {
+      "name": "team_domain_fit",
+      "weight": 25.0,
+      "score": 10,
+      "rationale": "The founders possess direct experience in both finance and accounting automation, making them well-equipped to execute on their solution."
+    },
+    {
+      "name": "wedge_defensibility",
+      "weight": 15.0,
+      "score": 8,
+      "rationale": "By aggregating real-time signals, Mesh builds an operational infrastructure that could accumulate value over time, but specific defensibility strategies are not detailed."
+    },
+    {
+      "name": "traction",
+      "weight": 10.0,
+      "score": 0,
+      "rationale": "The only evidence comes from the acceptance into YC Winter 2025, with no real-world traction or user engagement described."
+    }
+  ],
+  "call": "meet",
+  "call_rationale": "Mesh presents a promising solution for an existing pain point in finance teams with their approach to accruals. However, the lack of traction data raises concerns about its readiness for market. The strength of the team and the defined workflow position it well, but risks around actual demand remain open questions that need addressing for further consideration.",
+  "change_my_mind": [
+    "Evidence of early customer adoption or pilot programs validating the product's effectiveness.",
+    "Quantitative metrics demonstrating time savings or efficiency improvements in a trial setting.",
+    "Detailed plans on how Mesh will secure and leverage unique data integrations with finance tech stacks to enhance their service."
+  ],
+  "total_score": 87
+}

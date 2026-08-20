@@ -1,0 +1,83 @@
+{
+  "candidate_slug": "cardamon",
+  "thesis_version": "thesis@3cee761c34",
+  "model_used": "gpt-4o-mini",
+  "analyzed_at": "2026-08-20T18:34:25.804898Z",
+  "team": {
+    "text": "The founding team consists of two individuals with relevant experience in the financial sector and compliance. Areg Nzsdejan has a background as a Product Owner at Revolut, where he managed engineering teams and launched financial products like ETFs to a large customer base. Dmytro Astakhov also worked at Revolut as a Senior Software Engineer, contributing to financial products. However, their experience mentions product development rather than direct compliance work or an established depth in compliance automation technology specifically.",
+    "evidence_ids": [
+      "ev_b246e73e",
+      "ev_7ab6e533"
+    ]
+  },
+  "product": {
+    "text": "Cardamon aims to automate compliance for regulated financial businesses by ingesting relevant regulations and transforming them into actionable obligations and product requirements in a significantly shorter time frame. While the product's goal is clear, it does not indicate that it fully executes compliance processes without human intervention; rather, it sounds more like a tool to assist compliance officers.",
+    "evidence_ids": [
+      "ev_b246e73e",
+      "ev_7ab6e533"
+    ]
+  },
+  "market": {
+    "text": "The market for compliance automation in financial services is substantial, given the complexity and volume of regulations that financial firms face. Many firms currently allocate resources to compliance personnel or consultancy services, indicating a defined line item for compliance costs. However, without evidence of existing market penetration or specific buyers currently paying for compliance automation solutions, there's uncertainty regarding their immediate buyer pain.",
+    "evidence_ids": [
+      "ev_b246e73e",
+      "ev_7ab6e533"
+    ]
+  },
+  "risks": [
+    {
+      "text": "The product may not fully automate compliance workflows, potentially leaving a significant manual oversight requirement, which could limit its overall effectiveness compared to human compliance teams. This concern stems from the descriptions provided, which do not guarantee an end-to-end execution without human in-the-loop processes.",
+      "evidence_ids": [
+        "ev_b246e73e",
+        "ev_7ab6e533"
+      ]
+    },
+    {
+      "text": "There is no evidence provided that shows traction beyond being accepted into the YC batch. Without pilot programs or measurable outcomes, it is unclear whether potential customers have committed to using the platform or what their adoption timeline might be.",
+      "evidence_ids": [
+        "ev_b246e73e",
+        "ev_7ab6e533"
+      ]
+    }
+  ],
+  "dimension_scores": [
+    {
+      "name": "workflow_ownership",
+      "weight": 30.0,
+      "score": 3,
+      "rationale": "The product does not appear to execute compliance processes completely on its own and is more of an assistance tool that likely requires human review and oversight."
+    },
+    {
+      "name": "buyer_pain",
+      "weight": 20.0,
+      "score": 5,
+      "rationale": "Financial firms have compliance budgets, but there is no direct evidence that demonstrates current spending specifically on compliance automation or that these firms are ready to adopt a new solution."
+    },
+    {
+      "name": "team_domain_fit",
+      "weight": 25.0,
+      "score": 6,
+      "rationale": "The founding team has relevant experience in a regulated financial environment, but their background does not strongly emphasize compliance expertise or automation technology execution."
+    },
+    {
+      "name": "wedge_defensibility",
+      "weight": 15.0,
+      "score": 4,
+      "rationale": "While there's potential for accumulating data and insights over time to improve compliance automation, the current offering appears quite foundational with limited uniqueness against potential competitors."
+    },
+    {
+      "name": "traction",
+      "weight": 10.0,
+      "score": 1,
+      "rationale": "The only evidence of traction is acceptance into the YC batch, with no additional indicators of product usage or engagement from potential customers."
+    }
+  ],
+  "call": "watch",
+  "call_rationale": "Cardamon shows promise with its relevant team and valuable market positioning in compliance, but it does not clearly align with the thesis of fully automating a specific back-office workflow without human intervention. Moreover, the lack of traction and questions about the completeness of its automation capability raise concerns.",
+  "change_my_mind": [
+    "Evidence of paid pilots or initial customer commitments to validate market demand.",
+    "Demonstration of the product executing compliance tasks end-to-end without requiring human oversight.",
+    "Clear articulation of a competitive advantage or unique aspect of the technology that enhances its defensibility."
+  ],
+  "total_score": 41
+}

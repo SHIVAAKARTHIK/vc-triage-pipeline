@@ -1,0 +1,78 @@
+{
+  "candidate_slug": "vetnio",
+  "thesis_version": "thesis@3cee761c34",
+  "model_used": "gpt-4o-mini",
+  "analyzed_at": "2026-08-20T18:35:37.535871Z",
+  "team": {
+    "text": "The founding team has a mix of entrepreneurial experience and technical background, with Arman Karégar having founded three companies and Max Henry Xie being a second-time founder with technical skills in AI/data science. However, there is no indicated experience specifically in the veterinary field, which is critical for understanding the nuances of veterinary practices and workflows.",
+    "evidence_ids": [
+      "ev_ae41b734"
+    ]
+  },
+  "product": {
+    "text": "Vetnio provides an AI scribe that automates the generation of clinical notes for veterinary consultations, effectively targeting the administrative burden veterinarians face. This aligns well with the thesis by focusing directly on automating a specific back-office workflow that is currently performed manually, thus creating potential labor cost savings.",
+    "evidence_ids": [
+      "ev_7512df09"
+    ]
+  },
+  "market": {
+    "text": "There is a clear pain point, as veterinarians currently spend about 40% of their time on administrative tasks, with over 20% solely on note-taking. This indicates that veterinary practices allocate considerable budget to staffing for these tasks, making them a viable target market for Vetnio's automation solutions.",
+    "evidence_ids": [
+      "ev_ae41b734"
+    ]
+  },
+  "risks": [
+    {
+      "text": "The main risk is the lack of evidence regarding current pilot usage or customer feedback. Being in the YC Winter 2025 batch, it indicates that the startup is still in the early stages and has not yet gained traction in the market.",
+      "evidence_ids": [
+        "ev_ae41b734"
+      ]
+    },
+    {
+      "text": "There is no evidence that Vetnio has established relationships with veterinary practices or gained insights from them that could inform product development. Without this understanding, the product may not meet user needs effectively.",
+      "evidence_ids": [
+        "ev_7512df09"
+      ]
+    }
+  ],
+  "dimension_scores": [
+    {
+      "name": "workflow_ownership",
+      "weight": 30.0,
+      "score": 8,
+      "rationale": "The product fully automates the generation of clinical notes from veterinary consultations, making it a specific back-office task. However, the execution may still require the user's direct engagement with the patient during the consultation."
+    },
+    {
+      "name": "buyer_pain",
+      "weight": 20.0,
+      "score": 9,
+      "rationale": "Veterinarians clearly have a pain point, spending significant time on admin work, with a quantifiable aspect tied to labor costs and staffing for those tasks."
+    },
+    {
+      "name": "team_domain_fit",
+      "weight": 25.0,
+      "score": 5,
+      "rationale": "While the founders have entrepreneurial and technical experience, they lack specific experience in the veterinary field, which could pose challenges in product relevance and market fit."
+    },
+    {
+      "name": "wedge_defensibility",
+      "weight": 15.0,
+      "score": 6,
+      "rationale": "As an AI scribe, the tool has the potential to collect workflow-specific data over time, which could improve its efficiency and effectiveness. However, the defensibility of the technology over generic scribing tools is uncertain."
+    },
+    {
+      "name": "traction",
+      "weight": 10.0,
+      "score": 2,
+      "rationale": "Currently, the company is at the YC batch stage and has no evidence of real-world usage or pilot programs that provide traction so far."
+    }
+  ],
+  "call": "watch",
+  "call_rationale": "Vetnio addresses a targeted administrative pain point in veterinary practices that could see significant ROI from deploying their AI scribe to handle note-taking. However, key risks include lack of traction and insufficient domain-specific knowledge from the founding team, which may impact their ability to serve the veterinary market effectively.",
+  "change_my_mind": [
+    "Demonstration of pilot programs successfully underway with veterinary practices.",
+    "Evidence of traction with user feedback indicating high satisfaction and efficiency gains.",
+    "Key partnerships with major veterinary organizations or clinics that could serve as validation."
+  ],
+  "total_score": 66
+}
