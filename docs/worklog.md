@@ -43,9 +43,11 @@ quality judgement between the two.
 
 Splitting the pipeline into separate stages like this makes it easy to track — the
 Researcher's job is one level, and only once that's done does the Analyst come into the
-picture. It also means the LLM calls only happen where they're actually needed, in the
-specific section that needs them, rather than calling the AI on everything at once —
-that's where we're being budget-friendly about it.
+picture. The budget-friendly part isn't that each section gets its own AI call — it
+doesn't; Team, Product, Market, Risks, and all five scores come back from one single AI
+call per company. The real saving is that Sourcing and the memo-writing step use no AI
+at all, they're plain code — AI only gets called in the two places that actually need
+judgement, not everywhere.
 
 ## 2026-08-20 — The eval catching a real overreach
 
