@@ -1,0 +1,137 @@
+[
+  {
+    "memo_slug": "cardamon",
+    "traceability_score": 3,
+    "traceability_notes": "Most claims are supported by their cited sources, but some claims, particularly regarding full automation without human oversight, seem to overreach what the sources state, which raises concerns about complete traceability.",
+    "clarity_score": 3,
+    "clarity_notes": "The memo articulates the investment call and its primary concerns, but readers may need to read beyond the summary to fully grasp the underlying arguments and the call's context.",
+    "judged_at": "2026-08-20T19:05:50.444135Z",
+    "model_used": "gpt-4o-mini"
+  },
+  {
+    "memo_slug": "cifrato",
+    "traceability_score": 3,
+    "traceability_notes": "Most claims are supported by cited sources, but there are overreaching statements, such as the founder's experience directly correlating to their ability in the accounting domain, which isn't substantiated.",
+    "clarity_score": 3,
+    "clarity_notes": "The call is understandable but requires reading beyond the summary to fully grasp the main reason, particularly regarding the traction concerns.",
+    "judged_at": "2026-08-20T19:05:52.315946Z",
+    "model_used": "gpt-4o-mini"
+  },
+  {
+    "memo_slug": "dex",
+    "traceability_score": 1,
+    "traceability_notes": "Several claims made regarding Dex's capabilities seem unsupported by the cited sources, such as the assertion of specific back-office workflow execution, which is not substantiated by the general descriptions provided in the sources. The information primarily describes Dex as a co-pilot, lacking details on its operational efficacy in defined tasks.",
+    "clarity_score": 3,
+    "clarity_notes": "While the memo conveys the general call against investing in Dex, it requires a careful reading of the summary to fully grasp the core reasons for the decision — mainly the absence of a defined back-office workflow. The main argument needs clearer emphasis to improve immediate understanding.",
+    "judged_at": "2026-08-20T19:05:55.137461Z",
+    "model_used": "gpt-4o-mini"
+  },
+  {
+    "memo_slug": "egress-health",
+    "traceability_score": 3,
+    "traceability_notes": "Most claims are supported by the source, but some metrics regarding the additional revenue and employee savings could be stretches of the source's assertions.",
+    "clarity_score": 3,
+    "clarity_notes": "The main call is somewhat clear, but it requires reading beyond the opening paragraph to understand the complete reasons affecting the investment decision.",
+    "judged_at": "2026-08-20T19:05:57.616248Z",
+    "model_used": "gpt-4o-mini"
+  },
+  {
+    "memo_slug": "leaping-ai",
+    "traceability_score": 3,
+    "traceability_notes": "Many claims are supported by the cited sources, but some, such as the effectiveness of their product or traction in the SMB sector, are not definitively backed by the evidence provided. This leads to some ambiguity regarding the claims about traction and market alignment.",
+    "clarity_score": 3,
+    "clarity_notes": "The investment call is generally understandable, but it requires the reader to sift through the details before grasping the main concern about traction and market fit. Specific reasons driving the investment decision are not immediately clear.",
+    "judged_at": "2026-08-20T19:06:00.062251Z",
+    "model_used": "gpt-4o-mini"
+  },
+  {
+    "memo_slug": "mastra",
+    "traceability_score": 1,
+    "traceability_notes": "Several claims made in the memo are not adequately supported by their cited sources. For example, the assertion that Mastra does not execute specific back-office workflows conflicts with the claim in the YC source that it provides 'workflows for complex operations'.",
+    "clarity_score": 3,
+    "clarity_notes": "While the memo presents a clear investment summary, the main reasons driving the call require reading past the summary to extract the specific factors influencing the decision, which detracts from immediate clarity.",
+    "judged_at": "2026-08-20T19:06:02.183836Z",
+    "model_used": "gpt-4o-mini"
+  },
+  {
+    "memo_slug": "mesh",
+    "traceability_score": 3,
+    "traceability_notes": "Most claims are supported by their sources, but some statements appear to overreach, particularly regarding user engagement and traction metrics, which lack sufficient backing from the cited source.",
+    "clarity_score": 4,
+    "clarity_notes": "The call is generally clear and understandable within the first few lines; however, further details on market traction could be more explicitly outlined for quicker comprehension.",
+    "judged_at": "2026-08-20T19:06:04.453492Z",
+    "model_used": "gpt-4o-mini"
+  },
+  {
+    "memo_slug": "promptless",
+    "traceability_score": 3,
+    "traceability_notes": "Most claims are supported by their sources, but the assertion that the product executes updates fully autonomously is not clearly substantiated by the sources provided, leading to some overreaching.",
+    "clarity_score": 3,
+    "clarity_notes": "The call is somewhat understandable after reading through the memo, but the main reason driving the investment decision requires a deeper look beyond the initial summary.",
+    "judged_at": "2026-08-20T19:06:07.115241Z",
+    "model_used": "gpt-4o-mini"
+  },
+  {
+    "memo_slug": "quantstruct",
+    "traceability_score": 2,
+    "traceability_notes": "Several claims in the memo overreach the sources provided; for example, the claim about securing pilot projects lacks supporting evidence from the cited sources, particularly the source about the company's operations from YC.",
+    "clarity_score": 4,
+    "clarity_notes": "The investment call and main reasons are understandable, but some details require further reading to fully grasp the underlying issues with market alignment.",
+    "judged_at": "2026-08-20T19:06:09.368618Z",
+    "model_used": "gpt-4o-mini"
+  },
+  {
+    "memo_slug": "rally",
+    "traceability_score": 3,
+    "traceability_notes": "Most claims are supported by their cited sources, but some aspects, particularly regarding the execution of workflows and direct customer connections, lack clear backing from the sources provided. For instance, the memo suggests that Rally can automate workflows but does not provide solid evidence to confirm this capability from its sources.",
+    "clarity_score": 3,
+    "clarity_notes": "The memo is understandable but requires reading past the initial summary to grasp the key reasons for the investment call. The main drivers, such as the need for clearer workflow execution and buyer pain evidence, become apparent only after further detail is provided.",
+    "judged_at": "2026-08-20T19:06:11.621339Z",
+    "model_used": "gpt-4o-mini"
+  },
+  {
+    "memo_slug": "salespatriot",
+    "traceability_score": 3,
+    "traceability_notes": "Most claims in the memo are reasonably supported, but certain statements about the product's capabilities overreach the sources, particularly the assertion that it can perform end-to-end execution without human oversight.",
+    "clarity_score": 3,
+    "clarity_notes": "The call is understandable but requires the reader to revisit the details around the product's functionality beyond the summary to grasp the challenges clearly.",
+    "judged_at": "2026-08-20T19:06:13.364142Z",
+    "model_used": "gpt-4o-mini"
+  },
+  {
+    "memo_slug": "scout",
+    "traceability_score": 1,
+    "traceability_notes": "Many claims about Scout's capabilities and market fit do not match what the sources say; for example, the memo claims Scout automates workflows but the cited source describes it as a system of record, leading to significant misalignment.",
+    "clarity_score": 3,
+    "clarity_notes": "The call is somewhat understandable after reading past the summary, but the main driver behind the investment thesis is not immediately clear, requiring additional context and further reading.",
+    "judged_at": "2026-08-20T19:06:15.103418Z",
+    "model_used": "gpt-4o-mini"
+  },
+  {
+    "memo_slug": "toothy-ai",
+    "traceability_score": 3,
+    "traceability_notes": "Most claims are well-supported, particularly the claim about dental clinics spending over 160 hours a month on insurance-related tasks. However, the correspondence between the sources and some of the team's experience assertions is less clear, particularly regarding their direct impact on the dental industry.",
+    "clarity_score": 4,
+    "clarity_notes": "The main call is understandable, especially regarding the product's automation capabilities, but it requires reading through several sections to fully grasp the unique selling proposition and the concerns about traction.",
+    "judged_at": "2026-08-20T19:06:17.920971Z",
+    "model_used": "gpt-4o-mini"
+  },
+  {
+    "memo_slug": "trava",
+    "traceability_score": 3,
+    "traceability_notes": "Most claims are supported by their cited sources; however, a few, especially regarding founder expertise and traction, lack sufficient backing from the sources provided.",
+    "clarity_score": 4,
+    "clarity_notes": "The memo clearly presents the investment thesis early on, though some details about risks and domain expertise could be integrated more seamlessly.",
+    "judged_at": "2026-08-20T19:06:19.402943Z",
+    "model_used": "gpt-4o-mini"
+  },
+  {
+    "memo_slug": "vetnio",
+    "traceability_score": 3,
+    "traceability_notes": "Most claims in the memo are generally supported by the sources, particularly the statistics on time spent by veterinarians on admin tasks. However, some claims about the founding team's experience and risks regarding traction seem to overreach their sources, which do not provide sufficient backing for those specifics.",
+    "clarity_score": 3,
+    "clarity_notes": "The memo presents key points well but requires reading past the summary to fully grasp the main drivers of the investment call, particularly the nuances of the risks and traction issues.",
+    "judged_at": "2026-08-20T19:06:21.657428Z",
+    "model_used": "gpt-4o-mini"
+  }
+]

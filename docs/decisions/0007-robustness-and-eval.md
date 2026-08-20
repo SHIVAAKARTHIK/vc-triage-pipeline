@@ -69,3 +69,37 @@ second time with a new tool name.
   judge score is read as-is. That's a deliberate scope boundary: the point of
   this stage is to *surface* a quality signal for a human to read, not to be
   another gate the pipeline enforces automatically.
+
+## What the first real run actually found
+
+Run 2026-08-20 against `gpt-4o-mini`, all 15 committed memos: traceability
+scores were `{3: 11, 2: 1, 1: 3}`, clarity `{4: 4, 3: 11}` — nothing scored a
+5 on either dimension, and nothing failed outright.
+
+The three traceability-1 memos are not a random three: **they're the exact
+three lowest-scoring `Pass` calls from the analyse stage** — `dex` (17),
+`mastra` (19), `scout` (16). The pattern is specific, not vague: when the
+analyse stage builds the case *for a Pass*, it sometimes overstates what the
+source evidence actually says to make the rejection read more decisively.
+The sharpest instance, verbatim from the judge on `mastra`:
+
+> "the assertion that Mastra does not execute specific back-office workflows
+> conflicts with the claim in the YC source that it provides 'workflows for
+> complex operations'."
+
+That's a real, legitimate finding about the analyse stage's own behaviour,
+not an eval artefact — the memo's Product section states a flat denial
+("does not execute...") about a source that literally uses the word
+"workflows," which reads as a stronger contradiction than the underlying
+reasoning (Mastra's workflows are a generic dev-framework primitive, not
+back-office task execution) actually needed to claim.
+
+**Left as a documented finding, not a fix**, in this pass — per this ADR's
+own stated boundary above (eval surfaces a signal, it doesn't gate the
+pipeline), and because the three affected memos are all correctly-called
+`Pass` results regardless: the overreach is in phrasing confidence, not in
+the call itself. The fix, if picked up later, is narrow and known: tighten
+`prompts/analyse_system.md`'s instruction from "don't invent facts" to
+something that also catches *overstated* negatives ("don't claim a source
+says X doesn't do something when the source's own words could be read as
+describing X").
